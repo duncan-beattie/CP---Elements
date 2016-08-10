@@ -1,52 +1,52 @@
 [
     {
-        element_type: "folio_breakdown",
-        title: "General",
-        acc_info: [
+        "element_type": "folio_breakdown",
+        "title": "General",
+        "acc_info": [
             {
-                acc_ref: "N123456",
-                acc_name: "School fees",
-                joint_holder: "Jack Smith"
+                "acc_ref": "N123456",
+                "acc_name": "School fees",
+                "joint_holder": "Jack Smith"
             }
         ],
-        acc_trans: [
-            { label: "Account Value", value: "24201.1"  },
-            { label: "Gain/Loss", value: "2003.1"  },
-            { label: "Money in", value: "21900.6"  },
-            { label: "Money out", value: "212.46"  },
-            { label: "Inter-account transfer in", value: "0"  },
-            { label: "Inter-account transfer out", value: "0"  },
-            { label: "Adjustments", value: "0"  }
+        "acc_trans": [
+            { "label": "Account value", "value": "24201.1"  },
+            { "label": "Gain/Loss", "value": "2003.1"  },
+            { "label": "Money in", "value": "21900.6"  },
+            { "label": "Money out", "value": "212.46"  },
+            { "label": "Inter-account transfer in", "value": "0"  },
+            { "label": "Inter-account transfer out", "value": "0"  },
+            { "label": "Adjustments", "value": "0"  }
         ]
     },
     {
-        element_type: "graph",
-        src: "images/graph.png",
-        href: "/folio/general/graph",
-        label: "Three month overview",
-        icon: "fa-bar-chart"
+        "element_type": "graph",
+        "src": "images/graph.png",
+        "href": "/folio/general/graph",
+        "label": "Three month overview",
+        "icon": "fa-bar-chart"
     },
     {
-        element_type: "folio_funds",
-        acc_funds: [
-            { 
-                title: "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
-                value: "5412.22",
-                fund_details: [
-                    { label: "ISIN", value: "GB0214654541540" },
-                    { label: "Total cost", value: "5123.02" },
-                    { label: "Quantity", value: "622.30" },
-                    { label: "Last Price", value: "8.6971" }
+        "element_type": "folio_funds",
+        "acc_funds": [
+            {
+                "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
+                "value": "5412.22",
+                "fund_details": [
+                    { "label": "ISIN", "value": "GB0214654541540" },
+                    { "label": "Total cost", "value": "5123.02" },
+                    { "label": "Quantity", "value": "622.30" },
+                    { "label": "Last Price", "value": "8.6971" }
                 ]
             },
-            { 
-                title: "Cash account",
-                value: "5412.22",
-                fund_details: [
-                    { label: "ISIN", value: "GB0214654541540" },
-                    { label: "Total cost", value: "5123.02" },
-                    { label: "Quantity", value: "622.30" },
-                    { label: "Last Price", value: "8.6971" }
+            {
+                "title": "Cash account",
+                "value": "5412.22",
+                "fund_details": [
+                    { "label": "ISIN", "value": "GB0214654541540" },
+                    { "label": "Total cost", "value": "5123.02" },
+                    { "label": "Quantity", "value": "622.30" },
+                    { "label": "Last Price", "value": "8.6971" }
                 ]
             }
         ]
