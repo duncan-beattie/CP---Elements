@@ -1,0 +1,42 @@
+
+// Type
+//
+h1, h2, h3, p, ul{
+    margin-bottom: .75em;
+}
+h1{
+    @include setFont('light');
+    font-size: $page_title;
+    margin-bottom: .25em;
+    color: $nuc_orange;
+    text-align: center;
+}
+h2{
+    font-size: $sub_header;
+    margin: 1em 0 .25em;
+    color: $nuc_orange
+}
+h3{
+    @include setFont('light');
+}
+ul{
+    list-style: outside;
+    margin-left: .75em;
+    li{
+        margin-left: .75em;
+        margin-bottom: .5em;
+}
+}
+ul,p{
+    //font-size: $copy_small;
+    @include setFont('med');
+    line-height: 1.5;
+}
+
+a{
+    color: $nuc_orange;
+    &:hover{
+        color: shade($nuc_orange, 25%);
+}
+}
+b{@include setFont(med);}

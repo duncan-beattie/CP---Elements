@@ -1,0 +1,26 @@
+[
+  {
+    element_type: "icon",
+    label: "Home Icon",
+    icn_class: "fa-home",
+    href: "/home/"
+  },
+  {
+    element_type: "icon",
+    label: "Bar Chart",
+    icn_class: "fa-bar-chart",
+    href: "#"
+  },
+  {
+    element_type: "icon",
+    label: "GBP",
+    icn_class: "fa-gbp",
+    href: "#"
+  },
+  {
+    element_type: "icon",
+    label: "Folder",
+    icn_class: "fa-folder-open",
+    href: "#"
+  },
+]

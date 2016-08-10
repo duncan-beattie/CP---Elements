@@ -1,0 +1,21 @@
+// Layout
+
+
+body{
+  @include setFont('thin');
+  line-height: 1.35;
+    color: $nuc_grey;
+    background: $nuc_light;
+    &.landing{
+        background: #fff;
+    }
+}
+
+.row{
+  max-width: 100%;
+  padding: 1em;
+  .site-header + &{
+    padding-top: 0;
+  }
+}
+

@@ -1,0 +1,37 @@
+// Variables
+
+$nuc_grey: #96857b;
+$nuc_light: #f5f3f2;
+$nuc_orange: #f78f21;
+
+$b: $nuc_grey;
+$w: $nuc_light;
+$h: $nuc_orange;
+$error: #b93644;
+
+$vag_light: "vag-rounded-light";
+$vag_thin: "vag-rounded-thin";
+$font-stack: "Helvetica, Arial, sans-serif";
+$light: $vag_light, $font-stack;
+$thin: $vag_thin, $font-stack;
+
+
+
+
+// Rhythm
+$base_copy: 1em;      // 16px
+$copy_small: .875em;  // 14px
+$copy_large: 1.5em;   // 24px
+$sub_header: 2em;     // 32px
+$page_title: 3.25em;  // 52px
+$header_title: 5em;   // 80px
+
+
+
+// breakpoints
+$vp-large: 1280px;
+$vp-norm: 1024px;
+$vp-med: 960px;
+$vp-small: 600px;
+$vp-teeny: 480px;
+$vp-nano: 320px;

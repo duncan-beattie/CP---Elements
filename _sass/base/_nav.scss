@@ -1,0 +1,45 @@
+
+// Navigation
+
+nav{
+  ul{
+    @include cleanList;
+    font-size: 1em;
+  }
+  &.subnav{
+    margin: 1em auto;
+    li{
+      background-color: $h;
+      margin: 0 -3px;
+      padding: .5em 1em;
+      @include mq($vp-teeny){
+        padding: .5em;
+      }
+      font-size: $copy_small;
+//      &:first-child{ border-radius: 8em 0 0 8em; }
+//      &:last-child{ border-radius: 0 8em 8em 0; }
+      a{
+        color: $b;
+        padding: .5em 1em;
+        @include caps;
+        letter-spacing: 0.05em;
+        position: relative;
+        &:after{
+          content: '';
+          display: inline-block;
+          width: 1px;
+          height: 1em;
+          background: $b;
+          position: absolute;
+          right: -1em;
+          top: .7em;
+        }
+        &:hover, &.active{
+          color: $w;
+          text-decoration: underline;
+        }
+      }
+      &:last-child a:after{ display: none; }
+    }
+  }
+}

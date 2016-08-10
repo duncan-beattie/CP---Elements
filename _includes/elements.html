@@ -1,0 +1,228 @@
+{% comment %}  ---------------------------  Element Definitions  ---------------------------  {% endcomment %}
+
+{% case element.element_type %}
+
+
+{% comment %}  ---------------------------  Buttons & Icons  ---------------------------  {% endcomment %}
+
+
+{% comment %}  ------|  Button
+
+                        expects: 
+                            href
+                            label
+                            icon - optional
+                            variant - optional, allows for primary, secondary button styles
+
+{% endcomment %}
+
+{% when "button" %}
+<a class="button{% if element.variant %} {{ element.variant }}{% endif %}" href="{{ element.href }}">{{ element.label }}{% if element.icon %}<i class="fa {{ element.icon }}" aria-hidden="true"></i>{% endif %}</a>
+
+
+
+{% comment %}  ------|  Navbar Icons.
+
+                        expects: 
+                            element.href - link location
+                            element.label - link label
+                            element.icn_class - icon to use
+
+{% endcomment %} 
+
+{% when "icon" %}
+    <a href="{{ element.href }}"><span aria-hidden="true">{{ element.label }}</span><i class="fa {{ element.icn_class }}" aria-hidden="true"></i></a>
+
+
+
+
+{% comment %}  ---------------------------  Text Elements  ---------------------------  {% endcomment %}
+
+
+{% comment %}  ------|  Welcome Message.
+
+                        expects: 
+                            element.user - user name
+                            cli_ref - Client reference number, optional
+                            prev_login - unix timestamp, optional
+
+                        TODO: 
+                            add some js to convert timestamp 
+{% endcomment %} 
+
+{% when "welcome_message" %}
+<div class="welcome">
+<h1>Good <span>Morning</span> {{ element.user }}</h1>
+{% if element.cli_ref %}
+    <ul>
+        <li>Client reference: {{ element.cli_ref }}</li>
+        {% if element.prev_login %}
+        <li data-ts="{{ element.prev_login  }}">Last login: </li>
+        {% endif %}
+    </ul>
+{% endif %}
+</div>
+
+
+
+{% comment %}  ------|  News Feed
+
+                        expects: 
+                            title
+                            news - array of stories
+                                title, date, summary - date is optional
+
+{% endcomment %}
+
+{% when "news_feed" %}
+<div class="{{ element.element_type }}">
+    <h2>{{ element.title }}</h2>
+    {% for row in element["news"] %}
+    <div class="news">
+        <h3>{{ row.title }} {{ row.date }}</h3>
+        <p>{{ row.summary }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+{% comment %}  ---------------------------  Listicles  ---------------------------  {% endcomment %}
+
+{% comment %}  ------|  Folio view
+
+                        expects: 
+                            title
+                            sources - array of funds
+                                title, ref, fields [array for each field contains: label and value]
+
+{% endcomment %}
+
+{% when "folio_view" %}
+<div class="listicle {{ element.element_type }}">
+    <div class="block">
+        <div>
+            <p>{{ element.title }}</p>
+            <p class="pf_total">blah</p>
+        </div>
+    </div>
+    {% for row in element["sources"] %}
+    <div class="block">
+        <div>
+            <p><a href="/folio/{{row.title}}">{{ row.title }}</a></p>
+            <p>{{ row.ref }}</p>
+        </div>
+        {% for field in row["fields"] %}
+        <div>
+            <p>{{ field.label }}</p>
+            <p><span class="pf_val">{{ field.value }}</span></p>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+
+
+{% comment %}  ------|  Folio Breakdown
+
+                        expects: 
+                            acc_info - array of details
+                                [ acc_ref, acc_name, joint_holder (optional) ]
+                            acc_transs - array of transactions
+                                [label, value]
+
+{% endcomment %}
+
+{% when "folio_breakdown" %}
+<div class="listicle {{ element.element_type }}">
+    <div class="folio_info block">
+        {% for row in element["acc_info"] %}
+            <div>
+                <p>{{ element.title }}</p>
+                <p>{{ row.acc_ref }}</p>
+            </div>
+            {% if row.joint_holder %}
+            <div>
+                <p>Joint account holder</p>
+                <p>{{ row.joint_holder }}</p>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="block acc_trans">
+    {% for row in element["acc_trans"] %}
+        <div>
+            <p>{{ row.label }}</p>
+            <p><span class="pf_val">{{ row.value }}</span></p>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+{% when "graph" %}
+<a class="button outline" href="#modal-graph">{{ element.label }}{% if element.icon %}<i class="fa {{ element.icon }}" aria-hidden="true"></i>{% endif %}</a>
+
+<!-- Modal -->
+<div class="modal" id="modal-one" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h2>Modal in CSS?</h2>
+      <a href="#close" class="btn-close" aria-hidden="true">×</a> <!--CHANGED TO "#close"-->
+    </div>
+    <div class="modal-body">
+      <p>One modal example here! :D</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#close" class="btn">Nice!</a>  <!--CHANGED TO "#close"-->
+    </div>
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
+
+
+
+{% when "folio_funds" %}
+<div class="listicle {{ element.element_type }}">
+    {% for row in element["acc_funds"] %}
+    <div class="block acc_funds accordion">
+        <div>
+            <p>{{ row.title }}</p>
+            <p><span class="pf_val">{{ row.value }}</span></p>
+        </div>
+        {% for field in row["fund_details"] %}
+        <div>
+            <p>{{ field.label }}</p>
+            <p><span class="pf_val">{{ field.value }}</span></p>
+        </div>
+        {% endfor %}
+        <div class="info-buttons">
+            <a class="button outline" href="/folio/general/">Get factsheet<i class="fa fa-file-text" aria-hidden="true"></i></a>
+            <a class="button outline" href="/folio/general/">Get KIDD<i class="fa fa-file-text" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+{% comment %}  ---------------------------  dev elements  ---------------------------  {% endcomment %}
+
+{% when "swatches" %}
+
+{%for swatch in element["clrs"] %}
+  <div class="swatch" style="background: {{ swatch.color }}">
+    <p>{{ swatch.label }}</p>
+  </div>
+{% endfor %}
+
+
+
+
+{% comment %}  ---------------------------  fallback case  ---------------------------  {% endcomment %}
+
+{% else %}
+
+<p class="error" ><b>The element type for {{element}} is not defined</b></p>
+
+{% endcase %}

@@ -1,0 +1,78 @@
+.welcome{
+    ul{
+        @include cleanList;
+        @include setFont('light');
+        li{
+            display: block;
+        }
+    }
+}
+
+.listicle{
+    .block{
+        background: #fff;
+        padding: 1em ;
+        margin: 1em 0;
+        position: relative;
+        &.has_link{
+            padding: 1em 2em 1em 1em;
+            &:after{
+                content: '\f0da';
+                font-family: FontAwesome;
+                position: absolute;
+                right: .5em;
+                top: calc(50% - .5em);
+            }
+        }
+        a{ text-decoration: none; }
+        & > div{
+            display: flex;
+            &:first-child{
+                p:nth-child(2n-1){
+                   color: $nuc_orange;
+                }
+            }
+        }
+        p{
+            margin: 0;
+            width: 50%;
+            display: inline;
+            &:nth-child(2n){
+                text-align: right;
+            }
+        }
+        .pf_total, .pf_val{
+            &:before{
+                content: '\00a3';
+            }
+        }
+    }
+    &.folio_view{
+        .block{
+            &:first-child p{
+                font-size: 1.5em;
+            }
+        }
+    }
+    &.folio_breakdown{
+        .block{
+            position: relative;
+            &.folio_info{
+                @include stretch(rgba($nuc_grey, .25));
+                margin-top: 0;
+            }
+            &.acc_trans{
+                background: transparent;
+                padding: 1em 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

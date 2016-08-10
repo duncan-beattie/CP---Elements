@@ -1,0 +1,21 @@
+// Header Layout
+.site-header{
+    background: #fff;
+    overflow: auto;
+    .logo{
+        background: url(../images/NucleusLogo-transparent.png) no-repeat center;
+        background-size: contain;
+        width: 50%;
+        max-width: 160px;
+        display: inline-block;
+        font-size: 2em;
+        text-indent: -999px;
+        overflow: hidden;
+    }
+    .nav-toggle{
+        display: inline-block;
+        float: right;
+        font-size: 2em;
+        line-height: 1.5;
+    }
+}

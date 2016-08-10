@@ -1,0 +1,394 @@
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'vag-rounded-light';
+  src: url("/fonts/VAGRoundedStd-Light/VAGRoundedStd-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/VAGRoundedStd-Light/VAGRoundedStd-Light.woff") format("woff"), url("/fonts/VAGRoundedStd-Light/VAGRoundedStd-Light.ttf") format("truetype"), url("/fonts/VAGRoundedStd-Light/VAGRoundedStd-Light.svg#VAGRoundedStd-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'vag-rounded-thin';
+  src: url("/fonts/vag-thin-font/VAGRoundedStd-Thin.eot?#iefix") format("embedded-opentype"), url("/fonts/vag-thin-font/VAGRoundedStd-Thin.woff") format("woff"), url("/fonts/vag-thin-font/VAGRoundedStd-Thin.ttf") format("truetype"), url("/fonts/vag-thin-font/VAGRoundedStd-Thin.svg#VAGRoundedStd-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 4, ../_sass/base/_layout.scss */
+body {
+  font-style: normal;
+  font-family: "vag-rounded-thin", "Helvetica, Arial, sans-serif";
+  font-weight: 500;
+  line-height: 1.35;
+  color: #96857b;
+  background: #f5f3f2;
+}
+/* line 9, ../_sass/base/_layout.scss */
+body.landing {
+  background: #fff;
+}
+
+/* line 14, ../_sass/base/_layout.scss */
+.row {
+  max-width: 100%;
+  padding: 1em;
+}
+/* line 17, ../_sass/base/_layout.scss */
+.site-header + .row {
+  padding-top: 0;
+}
+
+/* line 4, ../_sass/base/_type.scss */
+h1, h2, h3, p, ul {
+  margin-bottom: .75em;
+}
+
+/* line 7, ../_sass/base/_type.scss */
+h1 {
+  font-style: normal;
+  font-family: "vag-rounded-light", "Helvetica, Arial, sans-serif";
+  font-weight: 200;
+  font-size: 3.25em;
+  margin-bottom: .25em;
+  color: #f78f21;
+  text-align: center;
+}
+
+/* line 14, ../_sass/base/_type.scss */
+h2 {
+  font-size: 2em;
+  margin: 1em 0 .25em;
+  color: #f78f21;
+}
+
+/* line 19, ../_sass/base/_type.scss */
+h3 {
+  font-style: normal;
+  font-family: "vag-rounded-light", "Helvetica, Arial, sans-serif";
+  font-weight: 200;
+}
+
+/* line 22, ../_sass/base/_type.scss */
+ul {
+  list-style: outside;
+  margin-left: .75em;
+}
+/* line 25, ../_sass/base/_type.scss */
+ul li {
+  margin-left: .75em;
+  margin-bottom: .5em;
+}
+
+/* line 30, ../_sass/base/_type.scss */
+ul, p {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+/* line 36, ../_sass/base/_type.scss */
+a {
+  color: #f78f21;
+}
+/* line 38, ../_sass/base/_type.scss */
+a:hover {
+  color: #b96b19;
+}
+
+/* line 42, ../_sass/base/_type.scss */
+b {
+  font-style: normal;
+}
+
+/* line 2, ../_sass/layouts/_header.scss */
+.site-header {
+  background: #fff;
+  overflow: auto;
+}
+/* line 5, ../_sass/layouts/_header.scss */
+.site-header .logo {
+  background: url(../images/NucleusLogo-transparent.png) no-repeat center;
+  background-size: contain;
+  width: 50%;
+  max-width: 160px;
+  display: inline-block;
+  font-size: 2em;
+  text-indent: -999px;
+  overflow: hidden;
+}
+/* line 15, ../_sass/layouts/_header.scss */
+.site-header .nav-toggle {
+  display: inline-block;
+  float: right;
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+/* line 2, ../_sass/layouts/_home.scss */
+.home h1 {
+  font-size: 2em;
+}
+
+/* line 2, ../_sass/components/_components.scss */
+.welcome ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  font-style: normal;
+  font-family: "vag-rounded-light", "Helvetica, Arial, sans-serif";
+  font-weight: 200;
+}
+/* line 29, ../_sass/base/_mixins.scss */
+.welcome ul li, .welcome ul ol {
+  margin: 0 1em;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  display: inline;
+}
+/* line 5, ../_sass/components/_components.scss */
+.welcome ul li {
+  display: block;
+}
+
+/* line 12, ../_sass/components/_components.scss */
+.listicle .block {
+  background: #fff;
+  padding: 1em;
+  margin: 1em 0;
+  position: relative;
+}
+/* line 17, ../_sass/components/_components.scss */
+.listicle .block.has_link {
+  padding: 1em 2em 1em 1em;
+}
+/* line 19, ../_sass/components/_components.scss */
+.listicle .block.has_link:after {
+  content: '\f0da';
+  font-family: FontAwesome;
+  position: absolute;
+  right: .5em;
+  top: calc(50% - .5em);
+}
+/* line 27, ../_sass/components/_components.scss */
+.listicle .block a {
+  text-decoration: none;
+}
+/* line 28, ../_sass/components/_components.scss */
+.listicle .block > div {
+  display: flex;
+}
+/* line 31, ../_sass/components/_components.scss */
+.listicle .block > div:first-child p:nth-child(2n-1) {
+  color: #f78f21;
+}
+/* line 36, ../_sass/components/_components.scss */
+.listicle .block p {
+  margin: 0;
+  width: 50%;
+  display: inline;
+}
+/* line 40, ../_sass/components/_components.scss */
+.listicle .block p:nth-child(2n) {
+  text-align: right;
+}
+/* line 45, ../_sass/components/_components.scss */
+.listicle .block .pf_total:before, .listicle .block .pf_val:before {
+  content: '\00a3';
+}
+/* line 52, ../_sass/components/_components.scss */
+.listicle.folio_view .block:first-child p {
+  font-size: 1.5em;
+}
+/* line 58, ../_sass/components/_components.scss */
+.listicle.folio_breakdown .block {
+  position: relative;
+}
+/* line 60, ../_sass/components/_components.scss */
+.listicle.folio_breakdown .block.folio_info {
+  background: rgba(150, 133, 123, 0.25);
+  position: relative;
+  margin-top: 0;
+}
+/* line 6, ../_sass/base/_mixins.scss */
+.listicle.folio_breakdown .block.folio_info:before, .listicle.folio_breakdown .block.folio_info:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -25%;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  background: rgba(150, 133, 123, 0.25);
+}
+/* line 16, ../_sass/base/_mixins.scss */
+.listicle.folio_breakdown .block.folio_info:after {
+  right: -25%;
+  left: auto;
+}
+/* line 64, ../_sass/components/_components.scss */
+.listicle.folio_breakdown .block.acc_trans {
+  background: transparent;
+  padding: 1em 0;
+}
+
+/* line 2, ../_sass/components/_button_icon.scss */
+.navbar {
+  -moz-columns: 4;
+  -webkit-columns: 4;
+  columns: 4;
+  background: #96857b;
+  padding: 1em;
+}
+/* line 6, ../_sass/components/_button_icon.scss */
+.navbar a {
+  color: #96857b;
+  background: #fff;
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  line-height: 2;
+  font-size: 2em;
+  border-radius: 100%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 19, ../_sass/components/_button_icon.scss */
+.navbar a span {
+  text-indent: -9999px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+/* line 27, ../_sass/components/_button_icon.scss */
+.navbar a i {
+  position: relative;
+}
+/* line 28, ../_sass/components/_button_icon.scss */
+.navbar a:hover {
+  background: #f78f21;
+  color: #fff;
+}
+
+/* line 3, ../_sass/components/_buttons.scss */
+.button {
+  background: #f78f21;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: .5em;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* line 14, ../_sass/components/_buttons.scss */
+.button i {
+  float: right;
+  font-size: 1.5em;
+  display: inline-block;
+  padding-left: .5em;
+  line-height: .75;
+}
+/* line 21, ../_sass/components/_buttons.scss */
+.button.outline {
+  background: transparent;
+  color: #96857b;
+  border: 1px solid #96857b;
+  font-size: 1em;
+  text-align: left;
+}
+
+/* line 31, ../_sass/components/_buttons.scss */
+.modal {
+  display: none;
+}
+
+/* line 33, ../_sass/components/_buttons.scss */
+.modal:target {
+  display: block;
+}
+
+/* line 2, ../_sass/components/_newsfeed.scss */
+.news_feed h2 {
+  font-style: normal;
+  font-family: "vag-rounded-light", "Helvetica, Arial, sans-serif";
+  font-weight: 200;
+  padding: 1em;
+  color: #96857b;
+  text-align: center;
+}
+/* line 8, ../_sass/components/_newsfeed.scss */
+.news_feed .news {
+  padding-bottom: 1em;
+}

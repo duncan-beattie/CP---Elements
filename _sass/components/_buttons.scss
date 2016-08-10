@@ -1,0 +1,35 @@
+// Buttons
+
+.button{
+    background: $nuc_orange;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: .5em;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    i{
+        float: right;
+        font-size: 1.5em;
+        display: inline-block;
+        padding-left: .5em;
+        line-height: .75;
+    }
+    &.outline{
+        background: transparent;
+        color: $nuc_grey;
+        border: 1px solid $nuc_grey;
+        font-size: 1em;
+        text-align: left;
+    }
+}
+
+
+.modal{ display: none; }
+
+.modal:target {
+display: block;
+}

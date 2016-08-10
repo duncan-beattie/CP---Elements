@@ -1,0 +1,11 @@
+.news_feed{
+    h2{
+        @include setFont('light');
+        padding: 1em;
+        color: $nuc_grey;
+        text-align: center;
+    }
+    .news{
+        padding-bottom: 1em;
+    }
+}

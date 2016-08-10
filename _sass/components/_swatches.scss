@@ -1,0 +1,14 @@
+// swatches
+
+.swatch{
+  background: #fff;
+  width: 12em;
+  height: 12em;
+  display: inline-block;
+  p{
+    display: block;
+    padding: .5em;
+    text-align: center;
+    background: #fff;
+  }
+}

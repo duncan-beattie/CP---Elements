@@ -1,0 +1,88 @@
+// Mixins
+
+@mixin stretch($clr: #fff){
+    background: $clr;
+    position: relative;
+    &:before, &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        left: -25%;
+        width: 25%;
+        height: 100%;
+        top: 0;
+        background: $clr;
+    }
+    &:after{
+        right: -25%;
+        left: auto;
+    }
+}
+
+@mixin cleanList{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style:none;
+  //display: flex;
+  text-align: center;
+  li, ol{
+    margin: 0 1em;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    display: inline;
+  }
+}
+
+@mixin caps{
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+
+@mixin setFont($weight: 'thin'){
+  font-style: normal;
+//  letter-spacing: 1px;
+  @if $weight == "light"{ font-family: $light; font-weight: 200; }
+  @else if $weight == "thin"{ font-family: $thin; font-weight: 500; }
+}
+
+
+$mw_top: 480px; 
+@mixin innerContent{
+  max-width: $mw_top;
+  margin: 1em auto;
+  //text-align: center;
+  @include mq($vp-small){
+    padding: 0 2rem;
+  }
+}
+
+
+@mixin bordered($brdr: $h){
+  border: 2px solid $brdr !important;
+  padding: 1em;
+}
+
+@mixin rounded{ @include bordered; }
+
+@mixin brandButton($bg: $b, $fg: $h, $alt: $b){
+  background: $bg;
+  color: $fg;
+  letter-spacing: 0;
+  font-size: $copy_small;
+  @include caps;
+  padding: 1em 1.5em !important;
+  //@include transition(all, .5s);
+  &:hover{
+    color: $bg;
+    background: $fg;
+    border-color: $alt;
+  }
+}
+
+@mixin mq($bp){
+  @media(max-width:$bp){
+    @content;
+  }
+}
