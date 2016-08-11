@@ -1,0 +1,30 @@
+[
+    {
+        "element_type": "welcome_message",
+        "user": "Brad"
+    },
+    {
+        "element_type": "news_feed",
+        "title": "Nucleus news",
+        "news": [
+            {
+                "title": "Platform release",
+                "date": "15-07-2016",
+                "summary": "AirDrop. Share with people nearby. If you don’t see them, have them turn on AirDrop in Control Center on iOS, or go to AirDrop in Finder on a Mac."
+            },
+            {
+                "title": "Did you know?",
+                "date": "125-07-2016",
+                "summary": "AirDrop. Share with people nearby. If you don’t see them, have them turn on AirDrop in Control Center on iOS, or go to AirDrop in Finder on a Mac."
+            }
+        ]
+    },
+    {
+        "element_type": "button",
+        "variant": "primary",
+        "href": "/home",
+        "label": "Continue to your accounts",
+        "icon": "fa-caret-right"
+    }
+]
+
