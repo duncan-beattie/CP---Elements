@@ -1,29 +1,39 @@
 [
     {
-        "element_type": "welcome_message",
-        "user": "Brad"
-    },
-    {
-        "element_type": "news_feed",
-        "title": "Nucleus news",
-        "news": [
+        "element_type": "form",
+        "title": "Login",
+        "additional_class": "login-form",
+        "action": "/",
+        "fields": [
             {
-                "title": "Platform release",
-                "date": "15-07-2016",
-                "summary": "AirDrop. Share with people nearby. If you don’t see them, have them turn on AirDrop in Control Center on iOS, or go to AirDrop in Finder on a Mac."
+                "label": "Please enter user ID",
+                "name": "user_ID",
+                "type": "text",
             },
             {
-                "title": "Did you know?",
-                "date": "125-07-2016",
-                "summary": "AirDrop. Share with people nearby. If you don’t see them, have them turn on AirDrop in Control Center on iOS, or go to AirDrop in Finder on a Mac."
+                "label": "Please enter password",
+                "name": "password",
+                "type": "password",
+            },
+            {
+                "label": "Login",
+                "name": "submit",
+                "type": "submit",
             }
         ]
     },
     {
-        "element_type": "button",
-        "variant": "primary",
-        "href": "/home",
-        "label": "Continue to your accounts",
-        "icon": "fa-caret-right"
+        "element_type": "link-list",
+        "additional_class": "tertiary",
+        "links": [
+            {
+                "href": "/home",
+                "label": "Forgotten password"
+            },
+            {
+                "href": "/home",
+                "label": "New user? Register here"
+            }
+        ]
     }
 ]

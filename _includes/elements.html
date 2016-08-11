@@ -34,8 +34,19 @@
     <a href="{{ element.href }}"><span aria-hidden="true">{{ element.label }}</span><i class="fa {{ element.icn_class }}" aria-hidden="true"></i></a>
 
 
+{% comment %}  ------|  Link List.
 
+                        expects: 
+                            Additional Class
+                            Array of links
+{% endcomment %} 
 
+{% when "link-list" %}
+<ul class="link-list{% if element.additional_class %} {{ element.additional_class }}{% endif %}">
+    {% for row in element["links"] %}
+    <li><a href="{{ row.href }}">{{ row.label }}</a></li>
+    {% endfor %}
+</ul>
 {% comment %}  ---------------------------  Text Elements  ---------------------------  {% endcomment %}
 
 
@@ -203,6 +214,55 @@
     </div>
     {% endfor %}
 </div>
+
+
+
+{% comment %}  ---------------------------  Form Elements  ---------------------------  {% endcomment %}
+
+
+{% comment %}  ------|  Form.
+
+                        expects: 
+                            title
+                            fields - array
+                            [label, type]
+
+                        TODO: 
+                            add some js to convert timestamp 
+{% endcomment %} 
+
+{% when "form" %}
+<div class="form-area{% if element.additional_class %} {{ element.additional_class }}{% endif %}"> 
+    
+    <form method="post" action="element.action">
+        {% for row in element["fields"] %}
+            {% if row.type == "text" %}
+                <input type="text" name="{{ row.name }}" id="{{ row.name }}" placeholder="{{ row.label }}" />
+            {% endif %}
+            {% if row.type == "password" %}
+                <input type="password" name="{{ row.name }}" id="{{ row.name }}" placeholder="{{ row.label }}" />
+            {% endif %}
+            {% if row.type == "submit" %}
+                <input type="submit" name="{{ row.name }}" id="{{ row.name }}" value="{{ row.label }}" class="button submit_button"/>
+            {% endif %}
+        {% endfor %}
+       <!-- 
+        <label for="City">City:</label>
+        <input type="text" name="City" id="City" />
+
+        <label for="Email">Email:</label>
+        <input type="text" name="Email" id="Email" />
+        
+        <label for="Message">Message:</label><br />
+        <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+        <input type="submit" name="submit" value="Submit" class="submit-button" />
+-->
+    </form>
+
+</div>
+
+
 
 
 
