@@ -8,17 +8,34 @@
             {
                 "label": "Please enter user ID",
                 "name": "user_ID",
-                "type": "text",
+                "type": "text"
             },
             {
                 "label": "Please enter password",
                 "name": "password",
-                "type": "password",
+                "type": "password"
+            },
+            {
+                "outer_label": "Textarea test",
+                "name": "textarea",
+                "type": "textarea"
+            },
+            {
+                "outer_label": "Select test",
+                "name": "select_test",
+                "type": "select",
+                "options": [
+                    { "val": "value1", "label": "option 1"  },
+                    { "val": "value2", "label": "option 2", "selected": "true"  },
+                    { "val": "value3", "label": "option 3"  },
+                    { "val": "value4", "label": "option 4"  },
+                    { "val": "value5", "label": "option 5"  }
+                ]
             },
             {
                 "label": "Login",
                 "name": "submit",
-                "type": "submit",
+                "type": "submit"
             }
         ]
     },

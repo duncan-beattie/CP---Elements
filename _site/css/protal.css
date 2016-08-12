@@ -163,11 +163,13 @@ b {
 /* line 2, ../_sass/base/_forms.scss */
 .form-area form {
   font-size: 1em;
+  width: 100%;
+  max-width: 380px;
+  margin: 1em auto;
 }
-/* line 5, ../_sass/base/_forms.scss */
+/* line 8, ../_sass/base/_forms.scss */
 .form-area input, .form-area password, .form-area textarea, .form-area select {
   width: 100%;
-  max-width: 280px;
   background: #f5f3f2;
   color: #96857b;
   font: inherit;
@@ -176,6 +178,18 @@ b {
   margin: .5em auto;
   display: block;
   text-align: left;
+  box-sizing: border-box;
+}
+/* line 22, ../_sass/base/_forms.scss */
+.form-area input[type="submit"].submit_button {
+  text-align: left;
+  font-size: 1em;
+  max-width: 100%;
+}
+/* line 28, ../_sass/base/_forms.scss */
+.form-area label {
+  margin-top: 1em;
+  display: block;
 }
 
 /* line 2, ../_sass/layouts/_header.scss */
@@ -358,7 +372,7 @@ b {
 }
 
 /* line 3, ../_sass/components/_buttons.scss */
-.button {
+.button, .form-area input[type="submit"] {
   background: #f78f21;
   color: #fff;
   text-align: center;
@@ -371,7 +385,7 @@ b {
   margin: 0 auto;
 }
 /* line 14, ../_sass/components/_buttons.scss */
-.button i {
+.button i, .form-area input[type="submit"] i {
   float: right;
   font-size: 1.5em;
   display: inline-block;
@@ -379,7 +393,7 @@ b {
   line-height: .75;
 }
 /* line 21, ../_sass/components/_buttons.scss */
-.button.outline {
+.button.outline, .form-area input.outline[type="submit"] {
   background: transparent;
   color: #96857b;
   border: 1px solid #96857b;

@@ -23,7 +23,17 @@
     <form method="post" action="element.action">
                 <input type="text" name="user_ID" id="user_ID" placeholder="Please enter user ID" />
                 <input type="password" name="password" id="password" placeholder="Please enter password" />
-                <input type="submit" name="submit" id="submit" value="Login" class="button submit_button"/>
+                <label for="textarea">Textarea test</label>
+                <textarea name="textarea" rows="10" cols="10" id="textarea"></textarea>
+                <label for="select_test">Select test</label>
+                <select name="select_test">
+                    <option value="value1">option 1</option>
+                    <option value="value2" selected>option 2</option>
+                    <option value="value3">option 3</option>
+                    <option value="value4">option 4</option>
+                    <option value="value5">option 5</option>
+                </select>
+                <input type="submit" name="submit" id="submit" value="Login" class="submit_button"/>
        <!-- 
         <label for="City">City:</label>
         <input type="text" name="City" id="City" />

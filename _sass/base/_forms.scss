@@ -1,10 +1,12 @@
 .form-area{
     form{
         font-size: 1em;
+        width: 100%;
+        max-width: 380px;
+        margin: 1em auto;
     }
     input, password, textarea, select{
         width: 100%;
-        max-width: 280px;
         background: $nuc_light;
         color: $nuc_grey;
         font: inherit;
@@ -13,5 +15,18 @@
         margin: .5em auto;
         display: block;
         text-align: left;
+        box-sizing: border-box;
+    }
+    input[type="submit"]{
+        @extend .button;
+        &.submit_button{
+            text-align: left;
+            font-size: 1em;
+            max-width: 100%;
+        }
+    }
+    label{
+        margin-top: 1em;
+        display: block;
     }
 }

@@ -237,13 +237,35 @@
     <form method="post" action="element.action">
         {% for row in element["fields"] %}
             {% if row.type == "text" %}
+                {% if row.outer_label %}
+                <label for="{{ row.name }}">{{ row.outer_label }}</label>
+                {% endif %}
                 <input type="text" name="{{ row.name }}" id="{{ row.name }}" placeholder="{{ row.label }}" />
             {% endif %}
             {% if row.type == "password" %}
+                {% if row.outer_label %}
+                <label for="{{ row.name }}">{{ row.outer_label }}</label>
+                {% endif %}
                 <input type="password" name="{{ row.name }}" id="{{ row.name }}" placeholder="{{ row.label }}" />
             {% endif %}
+            {% if row.type == "textarea" %}
+                {% if row.outer_label %}
+                <label for="{{ row.name }}">{{ row.outer_label }}</label>
+                {% endif %}
+                <textarea name="{{ row.name }}" rows="10" cols="10" id="{{ row.name }}"></textarea>
+            {% endif %}
+            {% if row.type == "select" %}
+                {% if row.outer_label %}
+                <label for="{{ row.name }}">{{ row.outer_label }}</label>
+                {% endif %}
+                <select name="{{ row.name }}">
+                    {% for opt in row{"options"] %}
+                    <option value="{{ opt.val }}"{% if opt.selected %} selected{% endif %}>{{ opt.label }}</option>
+                    {% endfor %}
+                </select>
+            {% endif %}
             {% if row.type == "submit" %}
-                <input type="submit" name="{{ row.name }}" id="{{ row.name }}" value="{{ row.label }}" class="button submit_button"/>
+                <input type="submit" name="{{ row.name }}" id="{{ row.name }}" value="{{ row.label }}" class="submit_button"/>
             {% endif %}
         {% endfor %}
        <!-- 
