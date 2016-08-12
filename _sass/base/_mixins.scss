@@ -32,6 +32,10 @@
     text-align: center;
     width: 100%;
     display: inline;
+    @include mq($vp-small){
+        display: block;
+        margin: 1em;
+    }
   }
 }
 

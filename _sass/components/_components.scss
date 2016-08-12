@@ -69,7 +69,14 @@
     }
 }
 
-
+// link list
+.link-list{
+    @include cleanList;
+    a{
+        text-decoration: none;
+        margin: 1em;
+    }
+}
 
 
 

@@ -240,6 +240,13 @@ b {
   width: 100%;
   display: inline;
 }
+@media (max-width: 600px) {
+  /* line 29, ../_sass/base/_mixins.scss */
+  .welcome ul li, .welcome ul ol {
+    display: block;
+    margin: 1em;
+  }
+}
 /* line 5, ../_sass/components/_components.scss */
 .welcome ul li {
   display: block;
@@ -324,6 +331,35 @@ b {
 .listicle.folio_breakdown .block.acc_trans {
   background: transparent;
   padding: 1em 0;
+}
+
+/* line 73, ../_sass/components/_components.scss */
+.link-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+/* line 29, ../_sass/base/_mixins.scss */
+.link-list li, .link-list ol {
+  margin: 0 1em;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  display: inline;
+}
+@media (max-width: 600px) {
+  /* line 29, ../_sass/base/_mixins.scss */
+  .link-list li, .link-list ol {
+    display: block;
+    margin: 1em;
+  }
+}
+/* line 75, ../_sass/components/_components.scss */
+.link-list a {
+  text-decoration: none;
+  margin: 1em;
 }
 
 /* line 2, ../_sass/components/_button_icon.scss */
