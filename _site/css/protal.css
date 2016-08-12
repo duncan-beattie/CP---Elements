@@ -160,6 +160,24 @@ b {
   font-style: normal;
 }
 
+/* line 2, ../_sass/base/_forms.scss */
+.form-area form {
+  font-size: 1em;
+}
+/* line 5, ../_sass/base/_forms.scss */
+.form-area input, .form-area password, .form-area textarea, .form-area select {
+  width: 100%;
+  max-width: 280px;
+  background: #f5f3f2;
+  color: #96857b;
+  font: inherit;
+  border: none;
+  padding: .5em;
+  margin: .5em auto;
+  display: block;
+  text-align: left;
+}
+
 /* line 2, ../_sass/layouts/_header.scss */
 .site-header {
   background: #fff;

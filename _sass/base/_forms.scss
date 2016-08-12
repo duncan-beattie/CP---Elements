@@ -1,0 +1,17 @@
+.form-area{
+    form{
+        font-size: 1em;
+    }
+    input, password, textarea, select{
+        width: 100%;
+        max-width: 280px;
+        background: $nuc_light;
+        color: $nuc_grey;
+        font: inherit;
+        border: none;
+        padding: .5em;
+        margin: .5em auto;
+        display: block;
+        text-align: left;
+    }
+}
