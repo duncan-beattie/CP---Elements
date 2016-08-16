@@ -3,7 +3,7 @@
         "element_type": "form",
         "title": "Login",
         "additional_class": "login-form",
-        "action": "/",
+        "action": "/welcome/",
         "fields": [
             {
                 "label": "Please enter user ID",

@@ -12,10 +12,97 @@
         text-indent: -999px;
         overflow: hidden;
     }
-    .nav-toggle{
-        display: inline-block;
-        float: right;
-        font-size: 2em;
-        line-height: 1.5;
+}
+.nav-toggle{
+    display: inline-block;
+    float: right;
+    font-size: 2em;
+    line-height: 1.5;
+    .login &{
+        display: none;
+    }
+}
+
+#overlay{
+    background: #fff;
+    position: fixed;
+    right: 0;;
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    @include transition( all ease .5s );
+    &:before{
+        content: '';
+        background: rgba($nuc_grey, .5);
+        width: 0vw;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        display: block;
+        z-index: 0;
+        @include transition( all ease .5s );
+    }
+    &.is-open {
+        right: 0px;
+        width: 80vw;
+        &:before{
+            width: 100vw;
+        }
+    }
+    & > div{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1;
+        padding: 1em;
+    }
+    h3 {
+        padding: .5em 0;;
+        margin: 0;
+    }
+    a {
+        display: block;
+        &.nav-toggle{
+            float: none;
+        }
+    }
+    .welcome{
+        li {
+            text-align: left;
+            margin: 0;
+        }
+    }
+
+    ul.util-nav{
+        color: $nuc_grey;
+        
+        a{
+            color: inherit;
+            margin-top: 1em;
+            font-size: 1.5em;
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            i{
+                color: #fff;
+                background: $nuc_grey;
+                padding: 3%;
+                border-radius: 100%;
+                width: 1em;
+                height: 1em;
+                text-align: center;
+                overflow: hidden;
+                margin: 0 .5em 0 0;
+            }
+        }
+    }
+
+    @include mq(760px){
+        font-size: 90%;
+        width: 190px;
+        right: -190px;
     }
 }

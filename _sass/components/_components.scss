@@ -78,7 +78,25 @@
     }
 }
 
-
+.accordion{
+    & > div{
+        @include transition(all ease .5s);
+        &.is-closed{
+            div:not(.toggle){
+                display: none;
+            }
+            div:first-child{
+                display: flex;
+            }
+        }
+        .toggle{
+            font-size: 1.5em;
+            text-align: center;
+            display: block;
+            padding-top: 1em;
+        }
+    }
+}
 
 
 
