@@ -75,8 +75,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
-/* line 4, ../_sass/base/_layout.scss */
+/* line 3, ../_sass/base/_layout.scss */
+html {
+  background: #333;
+}
+
+/* line 7, ../_sass/base/_layout.scss */
 body {
+  min-height: 130vw;
+  padding-bottom: 7em;
   font-style: normal;
   font-family: "vag-rounded-thin", "Helvetica, Arial, sans-serif";
   font-weight: 500;
@@ -84,17 +91,18 @@ body {
   color: #96857b;
   background: #f5f3f2;
 }
-/* line 9, ../_sass/base/_layout.scss */
+/* line 14, ../_sass/base/_layout.scss */
 body.landing, body.login {
   background: #fff;
 }
 
-/* line 14, ../_sass/base/_layout.scss */
+/* line 19, ../_sass/base/_layout.scss */
 .row {
   max-width: 100%;
   padding: 1em;
+  overflow: hidden;
 }
-/* line 17, ../_sass/base/_layout.scss */
+/* line 23, ../_sass/base/_layout.scss */
 .site-header + .row {
   padding-top: 0;
 }
@@ -325,6 +333,13 @@ h1 + .form-area {
   }
 }
 
+/* line 111, ../_sass/layouts/_header.scss */
+.site-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
 /* line 2, ../_sass/layouts/_home.scss */
 .home h1 {
   font-size: 2em;
@@ -385,11 +400,11 @@ h1 + .form-area {
   text-decoration: none;
 }
 /* line 28, ../_sass/components/_components.scss */
-.listicle .block > div {
+.listicle .block > div:first-child, .listicle .block .details div {
   display: flex;
 }
 /* line 31, ../_sass/components/_components.scss */
-.listicle .block > div:first-child p:nth-child(2n-1) {
+.listicle .block > div:first-child:first-child p:nth-child(2n-1), .listicle .block .details div:first-child p:nth-child(2n-1) {
   color: #f78f21;
 }
 /* line 36, ../_sass/components/_components.scss */
@@ -441,8 +456,18 @@ h1 + .form-area {
   background: transparent;
   padding: 1em 0;
 }
+/* line 71, ../_sass/components/_components.scss */
+.listicle.model_folio .block {
+  background: rgba(150, 133, 123, 0.5);
+  color: #fff;
+  margin: 0 auto;
+}
+/* line 75, ../_sass/components/_components.scss */
+.listicle.model_folio .block p {
+  color: #fff !important;
+}
 
-/* line 73, ../_sass/components/_components.scss */
+/* line 83, ../_sass/components/_components.scss */
 .link-list {
   margin: 0;
   padding: 0;
@@ -465,33 +490,31 @@ h1 + .form-area {
     margin: 1em;
   }
 }
-/* line 75, ../_sass/components/_components.scss */
+/* line 85, ../_sass/components/_components.scss */
 .link-list a {
   text-decoration: none;
   margin: 1em;
 }
 
-/* line 82, ../_sass/components/_components.scss */
-.accordion > div {
+/* line 92, ../_sass/components/_components.scss */
+.accordion .details {
+  opacity: 1;
+  overflow: hidden;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 85, ../_sass/components/_components.scss */
-.accordion > div.is-closed div:not(.toggle) {
-  display: none;
+/* line 96, ../_sass/components/_components.scss */
+.accordion .details.is-closed {
+  height: 0 !important;
+  opacity: 0;
 }
-/* line 88, ../_sass/components/_components.scss */
-.accordion > div.is-closed div:first-child {
-  display: flex;
-}
-/* line 92, ../_sass/components/_components.scss */
-.accordion > div .toggle {
+/* line 101, ../_sass/components/_components.scss */
+.accordion .toggle {
   font-size: 1.5em;
   text-align: center;
   display: block;
-  padding-top: 1em;
 }
 
 /* line 2, ../_sass/components/_button_icon.scss */

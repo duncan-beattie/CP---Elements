@@ -49,12 +49,14 @@ $(function(){
 
 // Accordions
 $(function(){
-    $.each($('.accordion > div'), function(i, el){
+    $.each($('.accordion .details'), function(i, el){
         $(el).data('hgt', $(el).height())
+        $(el).css('height', $(el).data('hgt'))
         $(el).toggleClass('is-closed')
     })
     $('.accordion').find('.toggle').click(function(){
-        console.log('whatcha');
-        $(this).parent().toggleClass('is-closed')
+        $(this).find('i').toggleClass('fa-caret-down');
+        $(this).find('i').toggleClass('fa-caret-up');
+        $(this).parent().find('.details').toggleClass('is-closed')
     })
 });

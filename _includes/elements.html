@@ -225,26 +225,48 @@
 
 
 {% when "folio_funds" %}
-<div class="listicle {{ element.element_type }} accordion">
+<div class="listicle row {{ element.element_type }} accordion">
     {% for row in element["acc_funds"] %}
     <div class="block acc_funds">
         <div>
             <p>{{ row.title }}</p>
             <p><span class="pf_val">{{ row.value }}</span></p>
         </div>
-        {% for field in row["fund_details"] %}
-        <div>
-            <p>{{ field.label }}</p>
-            <p><span class="pf_val">{{ field.value }}</span></p>
-        </div>
-        {% endfor %}
-        <div class="info-buttons">
-            <a class="button outline" href="/folio/general/">Get factsheet<i class="fa fa-file-text" aria-hidden="true"></i></a>
-            <a class="button outline" href="/folio/general/">Get KIDD<i class="fa fa-file-text" aria-hidden="true"></i></a>
+        <div class="details">
+            {% for field in row["fund_details"] %}
+            <div>
+                <p>{{ field.label }}</p>
+                <p><span class="pf_val">{{ field.value }}</span></p>
+            </div>
+            {% endfor %}
+            <div class="info-buttons">
+                <a class="button outline" href="/folio/general/">Get factsheet<i class="fa fa-file-text" aria-hidden="true"></i></a>
+                <a class="button outline" href="/folio/general/">Get KIDD<i class="fa fa-file-text" aria-hidden="true"></i></a>
+            </div>
         </div>
         <div class="toggle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
     </div>
     {% endfor %}
+</div>
+
+
+{% when "model_folio" %}
+<div class="listicle row {{ element.element_type }} accordion">
+    <div class="block acc_funds">
+        <div>
+            <p>Model portfolio</p>
+            <p><span class="pf_val">{{ element.title }}</span></p>
+        </div>
+        <div class="details">
+            {% for field in element["fund-list"] %}
+            <div>
+                <p>{{ field.fund-name }}</p>
+                <p><span class="pf_val">{{ field.split }}</span></p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="toggle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+    </div>
 </div>
 
 

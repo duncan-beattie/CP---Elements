@@ -27,6 +27,15 @@
         "icon": "fa-bar-chart"
     },
     {
+        "element_type": "model_folio",
+        "title": "Brads model portfolio",
+        "fund-list": [
+            { "fund-name": "Cash", "split": "1.00" },
+            { "fund-name": "Blackrock Gold", "split": "75.00" },
+            { "fund-name": "Legg Mason IF Japan Equity", "split": "24.00" }
+        ]
+    },
+    {
         "element_type": "folio_funds",
         "acc_funds": [
             {

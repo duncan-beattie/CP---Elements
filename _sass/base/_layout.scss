@@ -1,7 +1,12 @@
 // Layout
 
+html{
+    background: #333;
+}
 
 body{
+    min-height: 130vw;
+    padding-bottom: 7em;
   @include setFont('thin');
   line-height: 1.35;
     color: $nuc_grey;
@@ -14,6 +19,7 @@ body{
 .row{
   max-width: 100%;
   padding: 1em;
+  overflow: hidden;
   .site-header + &{
     padding-top: 0;
   }
