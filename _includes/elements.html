@@ -146,7 +146,7 @@
     {% for row in element["sources"] %}
     <div class="block has_link">
         <div>
-            <p><a href="/folio/{{row.title}}">{{ row.title }}</a></p>
+            <p><a href="/folio/{{row.title | downcase}}">{{ row.title }}</a></p>
             <p>{{ row.ref }}</p>
         </div>
         {% for field in row["fields"] %}
