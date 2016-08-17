@@ -202,20 +202,17 @@
 </div>
 
 {% when "graph" %}
-<a class="button outline" href="#modal-graph">{{ element.label }}{% if element.icon %}<i class="fa {{ element.icon }}" aria-hidden="true"></i>{% endif %}</a>
+<a class="button outline" href="#{{ element.label | downcase | split:' ' }}">{{ element.label }}{% if element.icon %}<i class="fa {{ element.icon }}" aria-hidden="true"></i>{% endif %}</a>
 
 <!-- Modal -->
-<div class="modal" id="modal-one" aria-hidden="true">
+<div class="modal" id="{{ element.label | downcase | split:' ' }}" aria-hidden="true">
   <div class="modal-dialog">
+    <a href="#close"><i class="fa fa-times" aria-hidden="true"></i></a>
     <div class="modal-header">
       <h2>Modal in CSS?</h2>
-      <a href="#close" class="btn-close" aria-hidden="true">×</a> <!--CHANGED TO "#close"-->
     </div>
     <div class="modal-body">
       <p>One modal example here! :D</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#close" class="btn">Nice!</a>  <!--CHANGED TO "#close"-->
     </div>
     </div>
   </div>
@@ -230,13 +227,13 @@
     <div class="block acc_funds">
         <div>
             <p>{{ row.title }}</p>
-            <p><span class="pf_val">{{ row.value }}</span></p>
+            <p><span>{% if row.prefix %}{{ row.prefix }}{%endif%}{{ row.value }}</span></p>
         </div>
         <div class="details">
             {% for field in row["fund_details"] %}
             <div>
                 <p>{{ field.label }}</p>
-                <p><span class="pf_val">{{ field.value }}</span></p>
+                <p><span>{% if field.prefix %}{{ field.prefix }}{%endif%}{{ field.value }}</span></p>
             </div>
             {% endfor %}
             <div class="info-buttons">
@@ -255,13 +252,13 @@
     <div class="block acc_funds">
         <div>
             <p>Model portfolio</p>
-            <p><span class="pf_val">{{ element.title }}</span></p>
+            <p><span>{% if row.prefix %}{{ row.prefix }} {%endif%}{{ element.title }}</span></p>
         </div>
         <div class="details">
             {% for field in element["fund-list"] %}
             <div>
                 <p>{{ field.fund-name }}</p>
-                <p><span class="pf_val">{{ field.split }}</span></p>
+                <p><span>{% if row.prefix %}{{ row.prefix }} {%endif%}{{ field.split }}</span></p>
             </div>
             {% endfor %}
         </div>

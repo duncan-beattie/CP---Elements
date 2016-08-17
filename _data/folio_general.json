@@ -10,12 +10,12 @@
             }
         ],
         "acc_trans": [
-            { "label": "Account value", "value": "24201.1"  },
-            { "label": "Gain/Loss", "value": "2003.1"  },
-            { "label": "Money in", "value": "21900.6"  },
-            { "label": "Money out", "value": "212.46"  },
-            { "label": "Inter-account transfer in", "value": "0"  },
-            { "label": "Inter-account transfer out", "value": "0"  },
+            { "label": "Account value", "value": "24201.1", "prefix": "&pound;"  },
+            { "label": "Gain/Loss", "value": "2003.1", "prefix": "&pound;"  },
+            { "label": "Money in", "value": "21900.6", "prefix": "&pound;"  },
+            { "label": "Money out", "value": "212.46", "prefix": "&pound;"  },
+            { "label": "Inter-account transfer in", "value": "0", "prefix": "&pound;"  },
+            { "label": "Inter-account transfer out", "value": "0", "prefix": "&pound;"  },
             { "label": "Adjustments", "value": "0"  }
         ]
     },
@@ -23,16 +23,16 @@
         "element_type": "graph",
         "src": "images/graph.png",
         "href": "/folio/general/graph",
-        "label": "Three month overview",
+        "label": "Three month graph",
         "icon": "fa-bar-chart"
     },
     {
         "element_type": "model_folio",
         "title": "Brads model portfolio",
         "fund-list": [
-            { "fund-name": "Cash", "split": "1.00" },
-            { "fund-name": "Blackrock Gold", "split": "75.00" },
-            { "fund-name": "Legg Mason IF Japan Equity", "split": "24.00" }
+            { "fund-name": "Cash", "split": "1.00", "prefix": "%" },
+            { "fund-name": "Blackrock Gold", "split": "75.00", "prefix": "%" },
+            { "fund-name": "Legg Mason IF Japan Equity", "split": "24.00", "prefix": "%" }
         ]
     },
     {
@@ -41,21 +41,22 @@
             {
                 "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
                 "value": "5412.22",
+                "prefix": "&pound",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
-                    { "label": "Total cost", "value": "5123.02" },
-                    { "label": "Quantity", "value": "622.30" },
-                    { "label": "Last Price", "value": "8.6971" }
+                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
+                    { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]
             },
             {
                 "title": "Cash account",
-                "value": "5412.22",
+                "value": "5412.22", "prefix": "&pound;",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
-                    { "label": "Total cost", "value": "5123.02" },
-                    { "label": "Quantity", "value": "622.30" },
-                    { "label": "Last Price", "value": "8.6971" }
+                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
+                    { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]
             }
         ]

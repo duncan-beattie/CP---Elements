@@ -400,36 +400,40 @@ h1 + .form-area {
   text-decoration: none;
 }
 /* line 28, ../_sass/components/_components.scss */
-.listicle .block > div:first-child, .listicle .block .details div {
+.listicle .block > div:not(.details), .listicle .block .details div {
   display: flex;
 }
 /* line 31, ../_sass/components/_components.scss */
-.listicle .block > div:first-child:first-child p:nth-child(2n-1), .listicle .block .details div:first-child p:nth-child(2n-1) {
+.listicle .block > div:not(.details):first-child p:nth-child(2n-1), .listicle .block .details div:first-child p:nth-child(2n-1) {
   color: #f78f21;
 }
-/* line 36, ../_sass/components/_components.scss */
+/* line 37, ../_sass/components/_components.scss */
+.listicle .block .info-buttons a {
+  margin: .5em;
+}
+/* line 39, ../_sass/components/_components.scss */
 .listicle .block p {
   margin: 0;
   width: 50%;
   display: inline;
 }
-/* line 40, ../_sass/components/_components.scss */
+/* line 43, ../_sass/components/_components.scss */
 .listicle .block p:nth-child(2n) {
   text-align: right;
 }
-/* line 45, ../_sass/components/_components.scss */
+/* line 48, ../_sass/components/_components.scss */
 .listicle .block .pf_total:before, .listicle .block .pf_val:before {
   content: '\00a3';
 }
-/* line 52, ../_sass/components/_components.scss */
+/* line 55, ../_sass/components/_components.scss */
 .listicle.folio_view .block:first-child p {
   font-size: 1.5em;
 }
-/* line 58, ../_sass/components/_components.scss */
+/* line 61, ../_sass/components/_components.scss */
 .listicle.folio_breakdown .block {
   position: relative;
 }
-/* line 60, ../_sass/components/_components.scss */
+/* line 63, ../_sass/components/_components.scss */
 .listicle.folio_breakdown .block.folio_info {
   background: rgba(150, 133, 123, 0.25);
   position: relative;
@@ -451,23 +455,23 @@ h1 + .form-area {
   right: -25%;
   left: auto;
 }
-/* line 64, ../_sass/components/_components.scss */
+/* line 67, ../_sass/components/_components.scss */
 .listicle.folio_breakdown .block.acc_trans {
   background: transparent;
   padding: 1em 0;
 }
-/* line 71, ../_sass/components/_components.scss */
+/* line 74, ../_sass/components/_components.scss */
 .listicle.model_folio .block {
   background: rgba(150, 133, 123, 0.5);
   color: #fff;
   margin: 0 auto;
 }
-/* line 75, ../_sass/components/_components.scss */
+/* line 78, ../_sass/components/_components.scss */
 .listicle.model_folio .block p {
   color: #fff !important;
 }
 
-/* line 83, ../_sass/components/_components.scss */
+/* line 86, ../_sass/components/_components.scss */
 .link-list {
   margin: 0;
   padding: 0;
@@ -490,13 +494,13 @@ h1 + .form-area {
     margin: 1em;
   }
 }
-/* line 85, ../_sass/components/_components.scss */
+/* line 88, ../_sass/components/_components.scss */
 .link-list a {
   text-decoration: none;
   margin: 1em;
 }
 
-/* line 92, ../_sass/components/_components.scss */
+/* line 95, ../_sass/components/_components.scss */
 .accordion .details {
   opacity: 1;
   overflow: hidden;
@@ -505,16 +509,16 @@ h1 + .form-area {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 96, ../_sass/components/_components.scss */
+/* line 99, ../_sass/components/_components.scss */
 .accordion .details.is-closed {
   height: 0 !important;
   opacity: 0;
 }
-/* line 101, ../_sass/components/_components.scss */
+/* line 104, ../_sass/components/_components.scss */
 .accordion .toggle {
   font-size: 1.5em;
   text-align: center;
-  display: block;
+  display: block !important;
 }
 
 /* line 2, ../_sass/components/_button_icon.scss */
@@ -594,12 +598,29 @@ h1 + .form-area {
 
 /* line 31, ../_sass/components/_buttons.scss */
 .modal {
-  display: none;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 0 rgba(150, 133, 123, 0.25);
+  height: 0;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+}
+/* line 42, ../_sass/components/_buttons.scss */
+.modal .modal-dialog {
+  padding: 1em;
 }
 
-/* line 33, ../_sass/components/_buttons.scss */
+/* line 47, ../_sass/components/_buttons.scss */
 .modal:target {
-  display: block;
+  height: 100%;
+  box-shadow: 0 10px 0 rgba(150, 133, 123, 0.25);
 }
 
 /* line 2, ../_sass/components/_newsfeed.scss */
