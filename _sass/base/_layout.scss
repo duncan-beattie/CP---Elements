@@ -11,7 +11,7 @@ body{
   line-height: 1.35;
     color: $nuc_grey;
     background: $nuc_light;
-    &.landing, &.login{
+    &.landing, &.login, &.bg-white{
         background: #fff;
     }
 }

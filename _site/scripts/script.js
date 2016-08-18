@@ -60,3 +60,9 @@ $(function(){
         $(this).parent().find('.details').toggleClass('is-closed')
     })
 });
+
+
+
+$(function(){
+    // highlight navbar based on url ? maybe ??
+});

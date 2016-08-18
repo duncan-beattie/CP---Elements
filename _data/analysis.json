@@ -1,0 +1,39 @@
+[
+    {
+        "element_type": "form",
+        "title": "Analysis",
+        "additional_class": "login-form",
+        "action": "/welcome/",
+        "fields": [
+            {
+                "label": "Account",
+                "name": "account_options",
+                "type": "select",
+                "options": [
+                    { "val": "value1", "label": "option 1"  },
+                    { "val": "value2", "label": "option 2"  },
+                    { "val": "value3", "label": "option 3"  },
+                    { "val": "value4", "label": "option 4"  },
+                    { "val": "value5", "label": "option 5"  }
+                ]
+            },
+            {
+                "label": "Dates",
+                "name": "date_options",
+                "type": "select",
+                "options": [
+                    { "val": "value1", "label": "option 1"  },
+                    { "val": "value2", "label": "option 2"  },
+                    { "val": "value3", "label": "option 3"  },
+                    { "val": "value4", "label": "option 4"  },
+                    { "val": "value5", "label": "option 5"  }
+                ]
+            },
+            {
+                "label": "Search",
+                "name": "search",
+                "type": "submit"
+            }
+        ]
+    }
+]

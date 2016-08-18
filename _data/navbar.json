@@ -9,18 +9,18 @@
     "element_type": "icon",
     "label": "Bar Chart",
     "icn_class": "fa-bar-chart",
-    "href": "#"
+    "href": "/analysis/"
   },
   {
     "element_type": "icon",
     "label": "GBP",
     "icn_class": "fa-gbp",
-    "href": "#"
+    "href": "/transactions/"
   },
   {
     "element_type": "icon",
     "label": "Folder",
     "icn_class": "fa-folder-open",
-    "href": "#"
+    "href": "/documents/"
   }
 ]

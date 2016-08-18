@@ -18,6 +18,23 @@
         text-align: left;
         box-sizing: border-box;
     }
+    .styled-select{
+        position: relative;
+        select{
+            padding: .5em;
+            border-radius: 0;
+            -webkit-appearance: none;
+            -moz-apperance: none;
+        }
+        i{
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 1.5em;
+            padding: .25em .5em;
+            pointer-events: none;
+        }
+    }
     input[type="submit"]{
         @extend .button;
         &.submit_button{
@@ -29,5 +46,12 @@
     label{
         margin-top: 1em;
         display: block;
+    }
+    &.inverted{
+        input, password, textarea, select{
+            width: 100%;
+            background: #fff;
+            color: $nuc_grey;
+        }
     }
 }

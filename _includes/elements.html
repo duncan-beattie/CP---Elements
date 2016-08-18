@@ -206,13 +206,13 @@
 
 <!-- Modal -->
 <div class="modal" id="{{ element.label | downcase | split:' ' }}" aria-hidden="true">
-  <div class="modal-dialog">
     <a href="#close"><i class="fa fa-times" aria-hidden="true"></i></a>
-    <div class="modal-header">
-      <h2>Modal in CSS?</h2>
+  <div class="modal-dialog">
+    <div class="image-holder">
+        <img src="{{ element.href }}" alt="{{ element.title }}" />
     </div>
-    <div class="modal-body">
-      <p>One modal example here! :D</p>
+    <div class="modal-footer">
+        <a class="button outline" href="#">Analysis<i class="fa fa-bar-chart" aria-hidden="true"></i></a>
     </div>
     </div>
   </div>
@@ -252,19 +252,79 @@
     <div class="block acc_funds">
         <div>
             <p>Model portfolio</p>
-            <p><span>{% if row.prefix %}{{ row.prefix }} {%endif%}{{ element.title }}</span></p>
+            <p><span>{% if field.prefix %}{{ field.prefix }} {%endif%}{{ element.title }}</span></p>
         </div>
         <div class="details">
             {% for field in element["fund-list"] %}
             <div>
                 <p>{{ field.fund-name }}</p>
-                <p><span>{% if row.prefix %}{{ row.prefix }} {%endif%}{{ field.split }}</span></p>
+                <p><span>{% if field.prefix %}{{ field.prefix }} {%endif%}{{ field.split }}</span></p>
             </div>
             {% endfor %}
         </div>
         <div class="toggle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
     </div>
 </div>
+
+
+
+{% when "transaction_history" %}
+<div class="listicle row {{ element.element_type }} accordion">
+    {% for row in element["acc_trans"] %}
+    <div class="block acc_funds">
+        <div>
+            <p>{{row.label}}</p>
+            <p><span>{% if row.prefix %}{{ row.prefix }} {%endif%}{{ row.value }}</span></p>
+        </div>
+        <div>
+            <p>{{ row.date }}</p>
+        </div>
+        <div class="details">
+            {% for fee in row["fees"] %}
+            <div>
+                <p>{{ fee.label }}</p>
+                <p class="fee">-<span>{% if fee.prefix %}{{ fee.prefix }} {%endif%}{{ fee.value }}</span></p>
+            </div>
+            {% endfor %}
+            <div>
+                <p>Asset</p>
+                <p>Value</p>
+            </div>
+            {% for trans in row["breakdown"] %}
+            <div>
+                <p>{{ trans.label }}</p>
+                <p><span>{% if trans.prefix %}{{ trans.prefix }} {%endif%}{{ trans.value }}</span></p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="cash">
+            <p>{{ row["breakdown"]last.label }}</p>
+            <p><span>{% if row["breakdown"]last.prefix %}{{ row["breakdown"]last.prefix }} {%endif%}{{ row["breakdown"]last.value }}</span></p>
+        </div>
+        <div class="toggle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
+{% when "doc_list" %}
+<div class="listicle row {{ element.element_type }}">
+    <div class="block">
+            {% for field in element["download_info"] %}
+            <div>
+                <p>{{ field.label }}</p>
+                <p>{{ field.summary }}</p>
+                <p>{{ field.date }}</p>
+                {% if field.read == "true" %}
+                <p>{{ field.read }}</p>
+                {% endif %}
+            </div>
+            {% endfor %}
+    </div>
+</div>
+
 
 
 
@@ -283,7 +343,7 @@
 {% endcomment %} 
 
 {% when "form" %}
-<h1>{{ element.title }}</h1>
+{% if element.title %}<h1>{{ element.title }}</h1>{% endif %}
 <div class="form-area{% if element.additional_class %} {{ element.additional_class }}{% endif %}"> 
     
     <form action="{{ element.action }}">
@@ -310,11 +370,17 @@
                 {% if row.outer_label %}
                 <label for="{{ row.name }}">{{ row.outer_label }}</label>
                 {% endif %}
-                <select name="{{ row.name }}">
-                    {% for opt in row{"options"] %}
-                    <option value="{{ opt.val }}"{% if opt.selected %} selected{% endif %}>{{ opt.label }}</option>
-                    {% endfor %}
-                </select>
+                <div class="styled-select">
+                    <select name="{{ row.name }}">
+                        {% if row.label %}
+                        <option value="{{ row.label }}" selected >{{ row.label }}</option>
+                        {% endif %}
+                        {% for opt in row{"options"] %}
+                        <option value="{{ opt.val }}"{% if opt.selected %} selected{% endif %}>{{ opt.label }}</option>
+                        {% endfor %}
+                    </select>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
             {% endif %}
             {% if row.type == "submit" %}
                 <input type="submit" name="{{ row.name }}" id="{{ row.name }}" value="{{ row.label }}" class="submit_button"/>

@@ -92,7 +92,7 @@ body {
   background: #f5f3f2;
 }
 /* line 14, ../_sass/base/_layout.scss */
-body.landing, body.login {
+body.landing, body.login, body.bg-white {
   background: #fff;
 }
 
@@ -192,16 +192,42 @@ h1 + .form-area {
   text-align: left;
   box-sizing: border-box;
 }
+/* line 21, ../_sass/base/_forms.scss */
+.form-area .styled-select {
+  position: relative;
+}
 /* line 23, ../_sass/base/_forms.scss */
+.form-area .styled-select select {
+  padding: .5em;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-apperance: none;
+}
+/* line 29, ../_sass/base/_forms.scss */
+.form-area .styled-select i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.5em;
+  padding: .25em .5em;
+  pointer-events: none;
+}
+/* line 40, ../_sass/base/_forms.scss */
 .form-area input[type="submit"].submit_button {
   text-align: left;
   font-size: 1em;
   max-width: 100%;
 }
-/* line 29, ../_sass/base/_forms.scss */
+/* line 46, ../_sass/base/_forms.scss */
 .form-area label {
   margin-top: 1em;
   display: block;
+}
+/* line 51, ../_sass/base/_forms.scss */
+.form-area.inverted input, .form-area.inverted password, .form-area.inverted textarea, .form-area.inverted select {
+  width: 100%;
+  background: #fff;
+  color: #96857b;
 }
 
 /* line 2, ../_sass/layouts/_header.scss */
@@ -342,6 +368,7 @@ h1 + .form-area {
 
 /* line 2, ../_sass/layouts/_home.scss */
 .home h1 {
+  margin-top: 1em;
   font-size: 2em;
 }
 
@@ -409,7 +436,7 @@ h1 + .form-area {
 }
 /* line 37, ../_sass/components/_components.scss */
 .listicle .block .info-buttons a {
-  margin: .5em;
+  margin: .25em;
 }
 /* line 39, ../_sass/components/_components.scss */
 .listicle .block p {
@@ -470,8 +497,17 @@ h1 + .form-area {
 .listicle.model_folio .block p {
   color: #fff !important;
 }
+/* line 85, ../_sass/components/_components.scss */
+.listicle.transaction_history .block > div.cash {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #f5f3f2;
+  font-style: normal;
+  font-family: "vag-rounded-light", "Helvetica, Arial, sans-serif";
+  font-weight: 200;
+}
 
-/* line 86, ../_sass/components/_components.scss */
+/* line 96, ../_sass/components/_components.scss */
 .link-list {
   margin: 0;
   padding: 0;
@@ -494,13 +530,13 @@ h1 + .form-area {
     margin: 1em;
   }
 }
-/* line 88, ../_sass/components/_components.scss */
+/* line 98, ../_sass/components/_components.scss */
 .link-list a {
   text-decoration: none;
   margin: 1em;
 }
 
-/* line 95, ../_sass/components/_components.scss */
+/* line 105, ../_sass/components/_components.scss */
 .accordion .details {
   opacity: 1;
   overflow: hidden;
@@ -509,12 +545,12 @@ h1 + .form-area {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 99, ../_sass/components/_components.scss */
+/* line 109, ../_sass/components/_components.scss */
 .accordion .details.is-closed {
   height: 0 !important;
   opacity: 0;
 }
-/* line 104, ../_sass/components/_components.scss */
+/* line 114, ../_sass/components/_components.scss */
 .accordion .toggle {
   font-size: 1.5em;
   text-align: center;
@@ -601,7 +637,7 @@ h1 + .form-area {
   width: 100%;
   position: fixed;
   overflow: hidden;
-  background: #fff;
+  background: #f5f3f2;
   box-shadow: 0 0 0 rgba(150, 133, 123, 0.25);
   height: 0;
   -moz-transition: all 1.5s ease;
@@ -611,13 +647,29 @@ h1 + .form-area {
   left: 0;
   top: 0;
   z-index: 99999;
+  display: flex;
 }
-/* line 42, ../_sass/components/_buttons.scss */
+/* line 43, ../_sass/components/_buttons.scss */
+.modal a[href*="close"] {
+  font-size: 1.5em;
+  background: #fff;
+  padding: .5em;
+}
+/* line 48, ../_sass/components/_buttons.scss */
+.modal .image-holder {
+  width: 100%;
+}
+/* line 50, ../_sass/components/_buttons.scss */
+.modal .image-holder img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 56, ../_sass/components/_buttons.scss */
 .modal .modal-dialog {
   padding: 1em;
 }
 
-/* line 47, ../_sass/components/_buttons.scss */
+/* line 61, ../_sass/components/_buttons.scss */
 .modal:target {
   height: 100%;
   box-shadow: 0 10px 0 rgba(150, 133, 123, 0.25);

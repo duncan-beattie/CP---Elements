@@ -1,0 +1,74 @@
+[
+    {
+        "element_type": "form",
+        "action": "",
+        "additional_class": "inverted",
+        "fields": [
+            {
+                "label": "Document Type",
+                "name": "search_docs",
+                "type": "select",
+                "options": [
+                    { "val": "value1", "label": "option 1"  },
+                    { "val": "value2", "label": "option 2"  },
+                    { "val": "value3", "label": "option 3"  },
+                    { "val": "value4", "label": "option 4"  },
+                    { "val": "value5", "label": "option 5"  }
+                ]
+            },
+            {
+                "label": "Account",
+                "name": "search_acc",
+                "type": "select",
+                "options": [
+                    { "val": "value1", "label": "N164895 Isa", "selected": "true"  },
+                    { "val": "value2", "label": "option 2"  },
+                    { "val": "value3", "label": "option 3"  },
+                    { "val": "value4", "label": "option 4"  },
+                    { "val": "value5", "label": "option 5"  }
+                ]
+            },
+            {
+                "label": "Start date",
+                "name": "serach_start",
+                "type": "select",
+                "options": [
+                    { "val": "value1", "label": "01/01/2016", "selected": "true"  },
+                    { "val": "value2", "label": "01/02/2016"  },
+                    { "val": "value3", "label": "01/03/2016"  },
+                    { "val": "value4", "label": "01/04/2016"  },
+                    { "val": "value5", "label": "01/05/2016"  }
+                ]
+            },
+            {
+                "label": "End date",
+                "name": "serach_start",
+                "type": "select",
+                "options": [
+                    { "val": "value1", "label": "01/01/2016", "selected": "true"  },
+                    { "val": "value2", "label": "01/02/2016"  },
+                    { "val": "value3", "label": "01/03/2016"  },
+                    { "val": "value4", "label": "01/04/2016"  },
+                    { "val": "value5", "label": "01/05/2016"  }
+                ]
+            }
+        ]
+    },
+    {
+        "element_type": "doc_list",
+        "download_info": [
+            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
+            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "false", "icon": "pdf"  },
+            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
+            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
+            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
+            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
+            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
+            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  }
+        ]
+    }
+]
+
+
+
+

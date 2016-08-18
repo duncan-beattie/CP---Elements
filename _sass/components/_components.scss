@@ -34,7 +34,7 @@
             }
         }
         .info-buttons{
-            a{ margin: .5em; }
+            a{ margin: .25em; }
         }
         p{
             margin: 0;
@@ -77,6 +77,16 @@
             margin: 0 auto;
             p{
                 color: #fff!important;
+            }
+        }
+    }
+    &.transaction_history{
+        .block{
+            & > div.cash{
+                margin-top: 1em;
+                padding-top: 1em;
+                border-top: 1px solid $nuc_light;
+                @include setFont('light');
             }
         }
     }

@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home</title>
+  <title>Analysis</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
   <link rel="stylesheet" href="/css/protal.css">
-  <link rel="canonical" href="http://yourdomain.com/home/">
+  <link rel="canonical" href="http://yourdomain.com/analysis/">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml">
 </head>
-<body class="home">
+<body class="bg-white">
 <nav class="" id="overlay">
 <div class="welcome">
     <a class="nav-toggle" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
@@ -34,50 +34,42 @@
     </div>
 </header>
       <div class="row">
-<div class="welcome">
-<h1>Good <span>Morning</span> Brad</h1>
-    <ul>
-        <li>Client reference: 011114567</li>
-        <li data-ts="July 3, 2016 09:12:30">Last login: </li>
-    </ul>
-</div>
-<div class="listicle folio_view">
-    <div class="block">
-        <div>
-            <p>Portfolio total</p>
-            <p class="pf_total">blah</p>
-        </div>
-    </div>
-    <div class="block has_link">
-        <div>
-            <p><a href="/folio/general">General</a></p>
-            <p>N123456</p>
-        </div>
-        <div>
-            <p>School fees</p>
-            <p><span class="pf_val">24201.10</span></p>
-        </div>
-    </div>
-    <div class="block has_link">
-        <div>
-            <p><a href="/folio/isa">Isa</a></p>
-            <p>N123457</p>
-        </div>
-        <div>
-            <p></p>
-            <p><span class="pf_val">10168.20</span></p>
-        </div>
-    </div>
-    <div class="block has_link">
-        <div>
-            <p><a href="/folio/pension">Pension</a></p>
-            <p>N123458</p>
-        </div>
-        <div>
-            <p></p>
-            <p><span class="pf_val">20000.05</span></p>
-        </div>
-    </div>
+<h1>Analysis</h1>
+<div class="form-area login-form"> 
+    <form action="/welcome/">
+                <div class="styled-select">
+                    <select name="account_options">
+                        <option value="Account" selected >Account</option>
+                        <option value="value1">option 1</option>
+                        <option value="value2">option 2</option>
+                        <option value="value3">option 3</option>
+                        <option value="value4">option 4</option>
+                        <option value="value5">option 5</option>
+                    </select>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+                <div class="styled-select">
+                    <select name="date_options">
+                        <option value="Dates" selected >Dates</option>
+                        <option value="value1">option 1</option>
+                        <option value="value2">option 2</option>
+                        <option value="value3">option 3</option>
+                        <option value="value4">option 4</option>
+                        <option value="value5">option 5</option>
+                    </select>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+                <input type="submit" name="search" id="search" value="Search" class="submit_button"/>
+       <!-- 
+        <label for="City">City:</label>
+        <input type="text" name="City" id="City" />
+        <label for="Email">Email:</label>
+        <input type="text" name="Email" id="Email" />
+        <label for="Message">Message:</label><br />
+        <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+        <input type="submit" name="submit" value="Submit" class="submit-button" />
+-->
+    </form>
 </div>
       </div>
 <footer class="site-footer">
