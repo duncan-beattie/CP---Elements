@@ -25,15 +25,13 @@
   width: 100%;
   list-style:none;
   //display: flex;
-  text-align: center;
   li, ol{
     margin: 0 1em;
     padding: 0;
-    text-align: center;
-    display: inline;
-    @include mq($vp-small){
-        display: block;
-    }
+    display: inline-block;
+//    @include mq($vp-small){
+//        display: block;
+//    }
   }
 }
 

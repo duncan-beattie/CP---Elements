@@ -20,7 +20,9 @@ body{
 }
 
 .row{
-  max-width: 100%;
+  width: 100%;
+  max-width: $vp-large;
+  margin: 0 auto;
   padding: 1em;
   overflow: hidden;
   .site-header + &{

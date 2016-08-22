@@ -1,4 +1,6 @@
 .news_feed{
+    max-width: $vp-small;
+    margin: 0 auto;
     h2{
         @include setFont('light');
         padding: 1em;
