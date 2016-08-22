@@ -30,11 +30,9 @@
     margin: 0 1em;
     padding: 0;
     text-align: center;
-    width: 100%;
     display: inline;
     @include mq($vp-small){
         display: block;
-        margin: 1em;
     }
   }
 }
@@ -90,3 +88,5 @@ $mw_top: 480px;
     @content;
   }
 }
+
+

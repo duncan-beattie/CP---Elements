@@ -16,6 +16,7 @@
         position: relative;
         &.has_link{
             padding: 1em 2em 1em 1em;
+            cursor: pointer;
             &:after{
                 content: '\f0da';
                 font-family: FontAwesome;
@@ -63,6 +64,11 @@
             &.folio_info{
                 @include stretch(rgba($nuc_grey, .25));
                 margin-top: 0;
+                padding: 1em 0;
+                p{ 
+                    font-size: $copy_large;
+                    margin-bottom: .5em;
+                }
             }
             &.acc_trans{
                 background: transparent;
@@ -90,6 +96,37 @@
             }
         }
     }
+    &.doc_list{
+        .block{
+            padding-left: 2em;
+            &:before{
+                content: '';
+                width: 1em;
+                height: 1em;
+                background: $nuc_orange;
+                border-radius: 100%;
+                display: block;
+                position: absolute;
+                left: .5em;
+            }
+            &.read:before{
+                background: transparent;
+                border:1px solid $nuc_orange;
+            }
+            p{ 
+                display: block; 
+                text-align: left;
+                color: $nuc-grey;
+                width: 100%;
+            }
+            i{
+                position: absolute;
+                right: .5em;
+                top: calc(50% - .75em);
+                font-size: 1.5em;
+            }
+        }
+    }
 }
 
 // link list
@@ -102,6 +139,7 @@
 }
 
 .accordion{
+    padding-bottom: 0;
     .details{
         opacity: 1;
         overflow: hidden;
@@ -116,8 +154,11 @@
         text-align: center;
         display: block!important;
     }
+    & > div{
+        padding-bottom: 0 !important;
+    }
 }
-
+.accordion + .accordion{ padding-top: 0; }
 
 
 

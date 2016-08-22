@@ -21,9 +21,9 @@
         <li data-ts="July 3, 2016 09:12:30">Last login: </li>
     </ul>
     <ul class="util-nav">
-        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Personal details</a></li>
-        <li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</a></li>
-        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Contact us</a></li>
+        <li><a href="/preferences/"><i class="fa fa-user" aria-hidden="true"></i>Personal details</a></li>
+        <li><a href="/news/"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</a></li>
+        <li><a href="/contact/"><i class="fa fa-phone" aria-hidden="true"></i>Contact us</a></li>
     </ul>
 </div>
 </nav>
@@ -36,7 +36,7 @@
       <div class="row">
 <h1>Analysis</h1>
 <div class="form-area login-form"> 
-    <form action="/welcome/">
+    <form action="#">
                 <div class="styled-select">
                     <select name="account_options">
                         <option value="Account" selected >Account</option>
@@ -59,7 +59,6 @@
                     </select>
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </div>
-                <input type="submit" name="search" id="search" value="Search" class="submit_button"/>
        <!-- 
         <label for="City">City:</label>
         <input type="text" name="City" id="City" />
@@ -71,6 +70,20 @@
 -->
     </form>
 </div>
+<a class="button" href="#search">Search<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+<!-- Modal -->
+<div class="modal" id="search" aria-hidden="true">
+    <a href="#close"><i class="fa fa-times" aria-hidden="true"></i></a>
+  <div class="modal-dialog">
+    <div class="image-holder">
+        <img src="/images/graphs/alldates.png" alt="" />
+    </div>
+    <div class="modal-footer">
+    </div>
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
       </div>
 <footer class="site-footer">
 <div class="navbar">

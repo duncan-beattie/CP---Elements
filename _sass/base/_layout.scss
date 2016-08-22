@@ -6,7 +6,9 @@ html{
 
 body{
     min-height: 130vw;
-    padding-bottom: 7em;
+    min-height: 100vh;
+    font-size: #{$fs}px;
+    padding-bottom: 100px;
   @include setFont('thin');
   line-height: 1.35;
     color: $nuc_grey;
@@ -14,6 +16,7 @@ body{
     &.landing, &.login, &.bg-white{
         background: #fff;
     }
+    *{ box-sizing: border-box; }
 }
 
 .row{
@@ -23,5 +26,17 @@ body{
   .site-header + &{
     padding-top: 0;
   }
+}
+.info-page{
+    .site-header + .row{
+        text-align: center;
+        h1{
+            padding: 1em 0;
+        }
+        h2{
+            color: $nuc_grey;
+            padding-bottom: 1em;
+        }
+    }
 }
 

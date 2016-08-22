@@ -112,7 +112,7 @@
 {% endcomment %}
 
 {% when "news_feed" %}
-<div class="{{ element.element_type }}">
+<div class="listicle row {{ element.element_type }}">
     <h2>{{ element.title }}</h2>
     {% for row in element["news"] %}
     <div class="news">
@@ -121,8 +121,22 @@
     </div>
     {% endfor %}
 </div>
-
-
+{% comment %}
+{% when "newslist" %}
+<div class="listicle row {{ element.element_type }} accordion">
+    <h1>News</h1>
+    {% for row in element["news_items"] %}
+    <div class="block{% if field.read == 'true' %} read{% endif %}">
+        <h3><a href="{{ row.href }}">{{ row.title }}</a></h3>
+        <h3>{{row.date}}</h3>
+        <div class="details">
+            <p>{{row.summary}}</p>
+        </div>
+        <div class="toggle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+    </div>
+    {% endfor %}
+</div>
+{% endcomment %}
 
 {% comment %}  ---------------------------  Listicles  ---------------------------  {% endcomment %}
 
@@ -202,7 +216,7 @@
 </div>
 
 {% when "graph" %}
-<a class="button outline" href="#{{ element.label | downcase | split:' ' }}">{{ element.label }}{% if element.icon %}<i class="fa {{ element.icon }}" aria-hidden="true"></i>{% endif %}</a>
+<a class="button{% if element.button_type %} {{ element.button_type }}{% endif %}" href="#{{ element.label | downcase | split:' ' }}">{{ element.label }}{% if element.icon %}<i class="fa {{ element.icon }}" aria-hidden="true"></i>{% endif %}</a>
 
 <!-- Modal -->
 <div class="modal" id="{{ element.label | downcase | split:' ' }}" aria-hidden="true">
@@ -212,7 +226,9 @@
         <img src="{{ element.href }}" alt="{{ element.title }}" />
     </div>
     <div class="modal-footer">
-        <a class="button outline" href="#">Analysis<i class="fa fa-bar-chart" aria-hidden="true"></i></a>
+        {% if element.src %}
+        <a class="button{% if element.button_type %} {{ element.button_type }}{% endif %}" href="{{ element.src }}">Analysis<i class="fa fa-bar-chart" aria-hidden="true"></i></a>
+        {% endif %}
     </div>
     </div>
   </div>
@@ -269,7 +285,7 @@
 
 
 {% when "transaction_history" %}
-<div class="listicle row {{ element.element_type }} accordion">
+<div class="listicle {{ element.element_type }} accordion">
     {% for row in element["acc_trans"] %}
     <div class="block acc_funds">
         <div>
@@ -307,22 +323,32 @@
 </div>
 
 
+{% when "newslist" %}
+<div class="listicle row {{ element.element_type }} accordion">
+    <h1>News</h1>
+    {% for row in element["news_items"] %}
+    <div class="block{% if field.read == 'true' %} read{% endif %}">
+        <h3><a href="{{ row.href }}">{{ row.title }}</a></h3>
+        <h3>{{row.date}}</h3>
+        <div class="details">
+            <p>{{row.summary}}</p>
+        </div>
+        <div class="toggle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+    </div>
+    {% endfor %}
+</div>
 
 
 {% when "doc_list" %}
-<div class="listicle row {{ element.element_type }}">
-    <div class="block">
-            {% for field in element["download_info"] %}
-            <div>
-                <p>{{ field.label }}</p>
-                <p>{{ field.summary }}</p>
-                <p>{{ field.date }}</p>
-                {% if field.read == "true" %}
-                <p>{{ field.read }}</p>
-                {% endif %}
-            </div>
-            {% endfor %}
+<div class="listicle {{ element.element_type }}">
+    {% for field in element["download_info"] %}
+    <div class="block{% if field.read == 'true' %} read{% endif %}">
+        <h3><a href="{{ field.href }}">{{ field.label }}</a></h3>
+        <p>{{ field.summary }}</p>
+        <p>{{ field.date }}</p>
+        {% if field.icon %}<i class="fa {{ field.icon }}" aria-hidden="true"></i>{% endif %}
     </div>
+    {% endfor %}
 </div>
 
 

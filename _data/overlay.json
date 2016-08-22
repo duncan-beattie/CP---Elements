@@ -5,9 +5,9 @@
         "cli_ref": "011114567",
         "prev_login": "July 3, 2016 09:12:30",
         "link-list": [ 
-            { "href": "#", "label": "Personal details", "icon": "fa-user" },
-            { "href": "#", "label": "News", "icon": "fa-newspaper-o" },
-            { "href": "#", "label": "Contact us", "icon": "fa-phone" }
+            { "href": "/preferences/", "label": "Personal details", "icon": "fa-user" },
+            { "href": "/news/", "label": "News", "icon": "fa-newspaper-o" },
+            { "href": "/contact/", "label": "Contact us", "icon": "fa-phone" }
         ]
     }
 ]

@@ -16,16 +16,13 @@ $light: $vag_light, $font-stack;
 $thin: $vag_thin, $font-stack;
 
 
+$fs: 14;
 
-
-// Rhythm
-$base_copy: 1em;      // 16px
-$copy_small: .875em;  // 14px
-$copy_large: 1.5em;   // 24px
-$sub_header: 2em;     // 32px
-$page_title: 3.25em;  // 52px
-$header_title: 5em;   // 80px
-
+$base_copy: em(16, $fs);
+$copy_small: em(14, $fs);
+$copy_large: em(18, $fs);
+$sub_header: em(24, $fs);
+$page_title: em(32, $fs);
 
 
 // breakpoints

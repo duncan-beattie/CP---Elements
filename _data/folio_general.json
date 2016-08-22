@@ -21,10 +21,11 @@
     },
     {
         "element_type": "graph",
-        "src": "images/graph.png",
+        "src": "/analysis/",
         "href": "/images/graphs/3mnth.png",
         "label": "Three month graph",
-        "icon": "fa-bar-chart"
+        "icon": "fa-bar-chart",
+        "button_type": "outline"
     },
     {
         "element_type": "model_folio",

@@ -1,9 +1,9 @@
 .form-area{
     h1 + &{margin-top: 4em;}
     form{
-        font-size: 1em;
+        font-size: $copy_large;
         width: 100%;
-        max-width: 380px;
+        max-width: 280px;
         margin: 1em auto;
     }
     input, password, textarea, select{
@@ -30,9 +30,9 @@
             position: absolute;
             right: 0;
             top: 0;
-            font-size: 1.5em;
             padding: .25em .5em;
             pointer-events: none;
+            font-size: $copy_large;
         }
     }
     input[type="submit"]{
@@ -53,5 +53,20 @@
             background: #fff;
             color: $nuc_grey;
         }
+    }
+}
+
+
+.login-form{
+    form{
+    }
+}
+.login-form + .link-list{
+    max-width: 280px;
+    margin: 0 auto;
+    li{ 
+        text-align: left; 
+        margin: 1em 0;
+        a{ margin: 1em 0; }
     }
 }

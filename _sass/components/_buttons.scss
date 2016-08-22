@@ -4,7 +4,7 @@
     background: $nuc_orange;
     color: #fff;
     text-align: center;
-    font-size: 1.5em;
+    font-size: $copy_large;
     text-decoration: none;
     padding: .5em;
     display: block;
@@ -35,7 +35,7 @@
     background: $nuc_light;
     box-shadow: 0 0 0 rgba($nuc_grey, .25);
     height: 0;
-    @include transition( all ease 1.5s );
+    @include transition( all ease .5s );
     left: 0;
     top: 0;
     z-index: 99999;

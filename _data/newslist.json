@@ -1,0 +1,32 @@
+[
+    {
+       "element_type": "newslist",
+       "title": "News",
+       "news_items": [
+           { 
+               "title": "New functionality – Sell and withdrawal", 
+               "href": "#",
+               "date": "Tue, 02 Aug 2016 11:54:49 BST",
+               "summary": "We've introduced new functionality on the platform allowing you to sell assets and then withdraw those assets as soon as all the funds have cleared, replacing the need for the current two-step process. You'll find this in the maintenance section of your client's wrap summary. For a closer look, click on the link above to download our sell and withdrawal user guide."
+           },
+           { 
+               "title": "New functionality – Sell and withdrawal", 
+               "href": "#",
+               "date": "Tue, 02 Aug 2016 11:54:49 BST",
+               "summary": "We've introduced new functionality on the platform allowing you to sell assets and then withdraw those assets as soon as all the funds have cleared, replacing the need for the current two-step process. You'll find this in the maintenance section of your client's wrap summary. For a closer look, click on the link above to download our sell and withdrawal user guide."
+           },
+           { 
+               "title": "New functionality – Sell and withdrawal", 
+               "href": "#",
+               "date": "Tue, 02 Aug 2016 11:54:49 BST",
+               "summary": "We've introduced new functionality on the platform allowing you to sell assets and then withdraw those assets as soon as all the funds have cleared, replacing the need for the current two-step process. You'll find this in the maintenance section of your client's wrap summary. For a closer look, click on the link above to download our sell and withdrawal user guide."
+           },
+           { 
+               "title": "New functionality – Sell and withdrawal", 
+               "href": "#",
+               "date": "Tue, 02 Aug 2016 11:54:49 BST",
+               "summary": "We've introduced new functionality on the platform allowing you to sell assets and then withdraw those assets as soon as all the funds have cleared, replacing the need for the current two-step process. You'll find this in the maintenance section of your client's wrap summary. For a closer look, click on the link above to download our sell and withdrawal user guide."
+           }
+       ]
+    }
+]

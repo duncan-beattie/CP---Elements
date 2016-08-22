@@ -6,5 +6,7 @@
         {{ content }}
       </div>
 
+{% if page.hidefoot != true %}
 {% include footer.html %}
+{% endif %}
 {% include foot.html %}

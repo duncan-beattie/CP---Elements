@@ -3,7 +3,7 @@
         "element_type": "form",
         "title": "Analysis",
         "additional_class": "login-form",
-        "action": "/welcome/",
+        "action": "#",
         "fields": [
             {
                 "label": "Account",
@@ -28,12 +28,13 @@
                     { "val": "value4", "label": "option 4"  },
                     { "val": "value5", "label": "option 5"  }
                 ]
-            },
-            {
-                "label": "Search",
-                "name": "search",
-                "type": "submit"
             }
         ]
+    },
+    {
+        "element_type": "graph",
+        "href": "/images/graphs/alldates.png",
+        "label": "Search",
+        "icon": "fa-caret-right"
     }
 ]

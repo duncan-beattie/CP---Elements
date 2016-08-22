@@ -57,14 +57,12 @@
     {
         "element_type": "doc_list",
         "download_info": [
-            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
-            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "false", "icon": "pdf"  },
-            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
-            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
-            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
-            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
-            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  },
-            { "label": "Client Statement 2016", "summary": "meh", "date": "16/03/2016", "read": "true", "icon": "pdf"  }
+            { "label": "Client Statement 2016", "summary": "1023764986 Isa", "date": "16/03/2016", "read": "true", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "label": "Client Statement 2016", "summary": "1063764256 Isa", "date": "16/03/2016", "read": "false", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "label": "Client Statement 2016", "summary": "1013764986 Isa", "date": "16/03/2016", "read": "true", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "label": "Client Statement 2016", "summary": "1023764986 Isa", "date": "16/03/2016", "read": "true", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "label": "Client Statement 2016", "summary": "1063764256 Isa", "date": "16/03/2016", "read": "false", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "label": "Client Statement 2016", "summary": "1013764986 Isa", "date": "16/03/2016", "read": "true", "icon": "fa-file-pdf-o", "href": "#"  }
         ]
     }
 ]
