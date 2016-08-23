@@ -1,26 +1,43 @@
 [
   {
-    "element_type": "icon",
-    "label": "Home Icon",
-    "icn_class": "fa-home",
-    "href": "/home/"
+    "element_type": "info_block",
+    "add-class": "hide-on-mobile",
+    "text-rows": [
+      { "text": "Client reference:" },
+      { "text": "1023597642" }
+    ]
   },
   {
-    "element_type": "icon",
-    "label": "Bar Chart",
-    "icn_class": "fa-bar-chart",
-    "href": "/analysis/"
+    "element_type": "info_block",
+    "add-class": "hide-on-mobile",
+    "text-rows": [
+      { "text": "Last Login" },
+      { "text": "3 July 2016 9:12am" }
+    ]
   },
   {
-    "element_type": "icon",
-    "label": "GBP",
-    "icn_class": "fa-gbp",
-    "href": "/transactions/"
-  },
-  {
-    "element_type": "icon",
-    "label": "Folder",
-    "icn_class": "fa-folder-open",
-    "href": "/documents/"
+      "element_type": "navbar",
+      "buttons": [
+          {
+            "label": "Home",
+            "icn_class": "fa-home",
+            "href": "/home/"
+          },
+          {
+            "label": "Analysis",
+            "icn_class": "fa-bar-chart",
+            "href": "/analysis/"
+          },
+          {
+            "label": "Transactions",
+            "icn_class": "fa-gbp",
+            "href": "/transactions/"
+          },
+          {
+            "label": "Documents",
+            "icn_class": "fa-folder-open",
+            "href": "/documents/"
+          }
+    ]
   }
 ]

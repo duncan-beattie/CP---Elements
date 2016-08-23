@@ -1,33 +1,35 @@
 // Button Icons
 .navbar{
-@include columns(4);
-    background: $nuc_grey;
-    padding: 1em;
-    a{
-        color: $nuc_grey;
-        background: #fff;
-        text-align: center;
-        width: 2em;
-        height: 2em;
-        line-height: 2;
-        font-size: $copy_large;
-        border-radius: 100%;
-        margin: 0 auto;
-        display: block;
-        position: relative;
-        @include transition(all .25s ease);
-        span{
-            text-indent: -9999px;
-            width: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: 0;
-        }
-        i{ position: relative;}
-        &:hover{
-            background: $nuc_orange;
-            color: #fff;
+        background: $nuc_grey;
+        padding: 1em;
+    nav{
+        @include columns(4);
+        a{
+            color: $nuc_grey;
+            background: #fff;
+            text-align: center;
+            width: 2em;
+            height: 2em;
+            line-height: 2;
+            font-size: $copy_large;
+            border-radius: 100%;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            @include transition(all .25s ease);
+            span{
+                text-indent: -9999px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 0;
+            }
+            i{ position: relative;}
+            &:hover{
+                background: $nuc_orange;
+                color: #fff;
+            }
         }
     }
 }
@@ -37,16 +39,47 @@
     width: 100%;
     bottom: 0;
     padding: 0;
+    left: 0;
+    z-index: 2;
 }
 
 
 
 @media (min-width: $vp-med){
+    // reset to 2 col layout
+    .outer{
+        overflow: visible;
+    }
     .site-footer{
-        position: absolute;
-        bottom: auto;
-        top: 5.25em;
-        left: 0;
+        position: relative;
+        float:left;
+        width: 25%;
+        box-shadow: -50vw 50vh 0 50vw $nuc-grey; 
         z-index: 0;
+    }
+    .site-footer ~ .row{
+        float: left;
+        width: 75%;
+    }
+
+    .navbar{
+        nav{
+            @include columns(1);
+            a{
+                margin: 1em 0;
+                &:after{
+                    color: #fff;
+                    content: attr(rel);
+                    display: block;
+                    margin: -2em 0 0 2.5em;
+                    text-align: left;
+                    white-space: nowrap;
+                    width: 100%;
+                }
+            }
+        }
+        .info_block{
+            color: #fff;
+        }
     }
 }

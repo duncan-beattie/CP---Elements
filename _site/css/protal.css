@@ -295,12 +295,20 @@ h1 + .form-area {
   text-align: center !important;
 }
 
+@media (max-width: 960px) {
+  /* line 6, ../_sass/base/_helpers.scss */
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
 /* line 2, ../_sass/layouts/_header.scss */
 .site-header {
+  position: relative;
+  z-index: 1;
   background: #fff;
   overflow: auto;
 }
-/* line 5, ../_sass/layouts/_header.scss */
+/* line 7, ../_sass/layouts/_header.scss */
 .site-header .logo {
   background: url(../images/NucleusLogo-transparent.png) no-repeat center;
   background-size: contain;
@@ -312,19 +320,19 @@ h1 + .form-area {
   overflow: hidden;
 }
 
-/* line 16, ../_sass/layouts/_header.scss */
+/* line 18, ../_sass/layouts/_header.scss */
 .nav-toggle {
   display: inline-block;
   float: right;
   font-size: 2em;
   line-height: 1.5;
 }
-/* line 21, ../_sass/layouts/_header.scss */
+/* line 23, ../_sass/layouts/_header.scss */
 .login .nav-toggle {
   display: none;
 }
 
-/* line 26, ../_sass/layouts/_header.scss */
+/* line 28, ../_sass/layouts/_header.scss */
 #overlay {
   background: #fff;
   position: fixed;
@@ -338,7 +346,7 @@ h1 + .form-area {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 35, ../_sass/layouts/_header.scss */
+/* line 37, ../_sass/layouts/_header.scss */
 #overlay:before {
   content: '';
   background: rgba(150, 133, 123, 0.5);
@@ -354,16 +362,23 @@ h1 + .form-area {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 47, ../_sass/layouts/_header.scss */
+/* line 49, ../_sass/layouts/_header.scss */
 #overlay.is-open {
   right: 0px;
   width: 80vw;
 }
-/* line 50, ../_sass/layouts/_header.scss */
+/* line 52, ../_sass/layouts/_header.scss */
 #overlay.is-open:before {
   width: 100vw;
 }
-/* line 54, ../_sass/layouts/_header.scss */
+@media (min-width: 960px) {
+  /* line 49, ../_sass/layouts/_header.scss */
+  #overlay.is-open {
+    width: 25vw;
+    max-width: 500px;
+  }
+}
+/* line 60, ../_sass/layouts/_header.scss */
 #overlay > div {
   position: absolute;
   width: 100%;
@@ -372,52 +387,52 @@ h1 + .form-area {
   z-index: 1;
   padding: 1em;
 }
-/* line 62, ../_sass/layouts/_header.scss */
+/* line 68, ../_sass/layouts/_header.scss */
 #overlay h3 {
   padding: .5em 0;
   margin: 0;
 }
-/* line 66, ../_sass/layouts/_header.scss */
+/* line 72, ../_sass/layouts/_header.scss */
 #overlay a {
   display: block;
 }
-/* line 68, ../_sass/layouts/_header.scss */
+/* line 74, ../_sass/layouts/_header.scss */
 #overlay a.nav-toggle {
   float: none;
 }
-/* line 73, ../_sass/layouts/_header.scss */
+/* line 79, ../_sass/layouts/_header.scss */
 #overlay .welcome li {
   text-align: left;
   margin: 0;
 }
-/* line 79, ../_sass/layouts/_header.scss */
+/* line 85, ../_sass/layouts/_header.scss */
 #overlay ul.util-nav {
   color: #96857b;
 }
-/* line 82, ../_sass/layouts/_header.scss */
+/* line 88, ../_sass/layouts/_header.scss */
 #overlay ul.util-nav a {
   color: inherit;
   margin-top: 1em;
-  font-size: 1.5em;
+  font-size: 1.14286em;
   display: flex;
   text-decoration: none;
   align-items: center;
 }
-/* line 89, ../_sass/layouts/_header.scss */
+/* line 95, ../_sass/layouts/_header.scss */
 #overlay ul.util-nav a i {
   color: #fff;
   background: #96857b;
-  padding: 3%;
   border-radius: 100%;
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
+  line-height: 2;
   text-align: center;
   overflow: hidden;
   margin: 0 .5em 0 0;
   box-sizing: content-box;
 }
 @media (max-width: 760px) {
-  /* line 26, ../_sass/layouts/_header.scss */
+  /* line 28, ../_sass/layouts/_header.scss */
   #overlay {
     font-size: 90%;
     width: 190px;
@@ -650,16 +665,28 @@ h1 + .form-area {
   padding-top: 0;
 }
 
+/* line 163, ../_sass/components/_components.scss */
+.info_block {
+  margin-bottom: 1em;
+}
+/* line 165, ../_sass/components/_components.scss */
+.info_block p {
+  margin: 0;
+}
+
 /* line 2, ../_sass/components/_button_icon.scss */
 .navbar {
-  -moz-columns: 4;
-  -webkit-columns: 4;
-  columns: 4;
   background: #96857b;
   padding: 1em;
 }
-/* line 6, ../_sass/components/_button_icon.scss */
-.navbar a {
+/* line 5, ../_sass/components/_button_icon.scss */
+.navbar nav {
+  -moz-columns: 4;
+  -webkit-columns: 4;
+  columns: 4;
+}
+/* line 7, ../_sass/components/_button_icon.scss */
+.navbar nav a {
   color: #96857b;
   background: #fff;
   text-align: center;
@@ -676,8 +703,8 @@ h1 + .form-area {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-/* line 19, ../_sass/components/_button_icon.scss */
-.navbar a span {
+/* line 20, ../_sass/components/_button_icon.scss */
+.navbar nav a span {
   text-indent: -9999px;
   width: 100%;
   position: absolute;
@@ -685,32 +712,70 @@ h1 + .form-area {
   top: 0;
   z-index: 0;
 }
-/* line 27, ../_sass/components/_button_icon.scss */
-.navbar a i {
+/* line 28, ../_sass/components/_button_icon.scss */
+.navbar nav a i {
   position: relative;
 }
-/* line 28, ../_sass/components/_button_icon.scss */
-.navbar a:hover {
+/* line 29, ../_sass/components/_button_icon.scss */
+.navbar nav a:hover {
   background: #f78f21;
   color: #fff;
 }
 
-/* line 35, ../_sass/components/_button_icon.scss */
+/* line 37, ../_sass/components/_button_icon.scss */
 .site-footer {
   position: fixed;
   width: 100%;
   bottom: 0;
   padding: 0;
+  left: 0;
+  z-index: 2;
 }
 
 @media (min-width: 960px) {
-  /* line 45, ../_sass/components/_button_icon.scss */
+  /* line 50, ../_sass/components/_button_icon.scss */
+  .outer {
+    overflow: visible;
+  }
+
+  /* line 53, ../_sass/components/_button_icon.scss */
   .site-footer {
-    position: absolute;
-    bottom: auto;
-    top: 5.25em;
-    left: 0;
+    position: relative;
+    float: left;
+    width: 25%;
+    box-shadow: -50vw 50vh 0 50vw #96857b;
     z-index: 0;
+  }
+
+  /* line 60, ../_sass/components/_button_icon.scss */
+  .site-footer ~ .row {
+    float: left;
+    width: 75%;
+  }
+
+  /* line 66, ../_sass/components/_button_icon.scss */
+  .navbar nav {
+    -moz-columns: 1;
+    -webkit-columns: 1;
+    columns: 1;
+  }
+  /* line 68, ../_sass/components/_button_icon.scss */
+  .navbar nav a {
+    margin: 1em 0;
+  }
+  /* line 70, ../_sass/components/_button_icon.scss */
+  .navbar nav a:after {
+    color: #fff;
+    content: attr(rel);
+    display: block;
+    margin: -2em 0 0 2.5em;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+  }
+  /* line 81, ../_sass/components/_button_icon.scss */
+  .navbar .info_block {
+    color: #fff;
   }
 }
 /* line 3, ../_sass/components/_buttons.scss */

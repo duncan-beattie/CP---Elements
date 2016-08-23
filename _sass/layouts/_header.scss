@@ -1,5 +1,7 @@
 // Header Layout
 .site-header{
+    position: relative;
+    z-index: 1;
     background: #fff;
     overflow: auto;
     .logo{
@@ -50,6 +52,10 @@
         &:before{
             width: 100vw;
         }
+        @media (min-width: $vp-med){
+            width: 25vw;
+            max-width: 500px;
+        }
     }
     & > div{
         position: absolute;
@@ -82,17 +88,17 @@
         a{
             color: inherit;
             margin-top: 1em;
-            font-size: 1.5em;
+            font-size: $base_copy;
             display: flex;
             text-decoration: none;
             align-items: center;
             i{
                 color: #fff;
                 background: $nuc_grey;
-                padding: 3%;
                 border-radius: 100%;
-                width: 1em;
-                height: 1em;
+                width: 2em;
+                height: 2em;
+                line-height: 2;
                 text-align: center;
                 overflow: hidden;
                 margin: 0 .5em 0 0;

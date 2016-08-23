@@ -30,9 +30,12 @@
 
 {% endcomment %} 
 
-{% when "icon" %}
-    <a href="{{ element.href }}"><span aria-hidden="true">{{ element.label }}</span><i class="fa {{ element.icn_class }}" aria-hidden="true"></i></a>
-
+{% when "navbar" %}
+<nav>
+{% for row in element["buttons"] %}
+<a href="{{ row.href }}" rel="{{ row.label }}"><i class="fa {{ row.icn_class }}" aria-hidden="true"></i></a>
+    {% endfor %}
+</nav>
 
 {% comment %}  ------|  Link List.
 
@@ -100,7 +103,12 @@
 {% endif %}
 </div>
 
-
+{% when "info_block" %}
+<div class="info_block{% if element.add-class %} {{element.add-class}}{%endif%}">
+{% for row in element["text-rows"] %}
+    <p>{{ row.text }} </p>
+{%endfor%}
+</div>
 
 {% comment %}  ------|  News Feed
 
@@ -229,7 +237,6 @@
         {% if element.src %}
         <a class="button{% if element.button_type %} {{ element.button_type }}{% endif %}" href="{{ element.src }}">Analysis<i class="fa fa-bar-chart" aria-hidden="true"></i></a>
         {% endif %}
-    </div>
     </div>
   </div>
 </div>

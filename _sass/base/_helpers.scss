@@ -1,3 +1,7 @@
 .center{
     text-align: center !important;
 }
+
+@include mq($vp-med){
+    .hide-on-mobile{ display: none!important; }
+}

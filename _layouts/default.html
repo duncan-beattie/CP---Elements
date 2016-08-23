@@ -2,11 +2,15 @@
 {% include overlay.html %}
 {% include header.html %}
 
-{% if page.hidefoot != true %}
-{% include footer.html %}
-{% endif %}
-      <div class="row">
+      <div class="row outer">
+        {% if page.hidefoot != true %}
+        {% include footer.html %}
+        {% endif %}
+      <div class="row content-holder">
         {{ content }}
+      <!-- end of inner content --> 
+      </div>
+      <!-- end of content --> 
       </div>
 
 {% include foot.html %}
