@@ -1,7 +1,20 @@
 .center{
     text-align: center !important;
 }
-
+// Desktop specific
 @include mq($vp-med){
-    .hide-on-mobile{ display: none!important; }
+    .hide-on-mobile, .hide-on-small{ display: none!important; }
+}
+@media(min-width: $vp-med){
+    .hide-on-large{ display: none!important; }
+}
+@media (min-width: $vp-med){
+    .col-2{
+        @include columns(2);
+        & > div{
+            width: 100%;
+            display: inline-block;
+            margin-bottom:0;
+        }
+    }
 }

@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home</title>
+  <title>General</title>
   <meta name="description" content="">
   <link rel="stylesheet" href="/css/protal.css">
-  <link rel="canonical" href="http://yourdomain.com/home/">
+  <link rel="canonical" href="http://yourdomain.com/folio/general2/">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml">
 </head>
-<body class="home">
+<body class="folio">
 <nav class="" id="overlay">
 <div class="welcome">
     <a class="nav-toggle" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
@@ -56,76 +56,88 @@
 </div>
 </footer>
       <div class="row content-holder">
-<div class="welcome hide-on-large">
-<h1>Good <span>Morning</span> Brad</h1>
-    <ul>
-        <li>Client reference: 011114567</li>
-        <li data-ts="July 3, 2016 09:12:30">Last login: </li>
-    </ul>
-</div>
-<div class="listicle header_graph hide-on-small accordion">
-    <div class="block">
-        <div>
-        <h2>Portfolio Valuation</h2>
-        <img src="/images/graphs/3mnth.png" />
-    </div>
-    <div class="details">
-        <p>khkhkjhdshuadhakd kljds lakjd alkjdsh alkjsdalkjsdh alkjsd kadsnalsd lkajsd </p>
-    </div>
-    <div class="toggle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
-    </div>
-</div>
-<div class="listicle folio_view">
-    <div class="block folio_total">
-        <div>
-            <p>Portfolio total</p>
-            <p class="pf_total">blah</p>
-        </div>
-    </div>
-    <div class="col-2">
-        <div class="block has_link">
+<div class="listicle folio_breakdown">
+    <div class="folio_info block">
             <div>
-                <p><a href="/folio/general">General</a></p>
-                <p>N468774</p>
-            </div>
-            <div>
-                <p><i class="fa fa-users" aria-hidden="true"></i> Jack Smith</p>
-            </div>
-            <div>
-                <p>School fees</p>
-                <p><span class="pf_val">8224.44</span></p>
-            </div>
-        </div>
-        <div class="block has_link">
-            <div>
-                <p><a href="/folio/general2">General</a></p>
+                <p>General</p>
                 <p>N266378</p>
             </div>
+    </div>
+    <div class="block acc_trans">
+        <div>
+            <p>Account value</p>
+            <p><span class="pf_val">116.81</span></p>
+        </div>
+        <div>
+            <p>Gain/Loss</p>
+            <p><span class="pf_val">16.81</span></p>
+        </div>
+        <div>
+            <p>Money in</p>
+            <p><span class="pf_val">100.00</span></p>
+        </div>
+        <div>
+            <p>Money out</p>
+            <p><span class="pf_val">0.00</span></p>
+        </div>
+        <div>
+            <p>Inter-account transfer in</p>
+            <p><span class="pf_val">0</span></p>
+        </div>
+        <div>
+            <p>Inter-account transfer out</p>
+            <p><span class="pf_val">0</span></p>
+        </div>
+        <div>
+            <p>Adjustments</p>
+            <p><span class="pf_val">0</span></p>
+        </div>
+    </div>
+</div>
+<a class="button outline" href="#threemonthgraph">Three month graph<i class="fa fa-bar-chart" aria-hidden="true"></i></a>
+<!-- Modal -->
+<div class="modal" id="threemonthgraph" aria-hidden="true">
+    <a href="#close"><i class="fa fa-times" aria-hidden="true"></i></a>
+  <div class="modal-dialog">
+    <div class="image-holder">
+        <img src="/images/graphs/3mnth.png" alt="" />
+    </div>
+    <div class="modal-footer">
+        <a class="button outline" href="/analysis/">Analysis<i class="fa fa-bar-chart" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
+<a class="button outline" href="transactions/general_n468774">View transaction history<i class="fa fa-gbp" aria-hidden="true"></i></a>
+<div class="listicle row folio_funds accordion">
+    <div class="block acc_funds">
+        <div>
+            <p>watBlackrock Gold & General D Acc</p>
+            <p><span>&pound98.00</span></p>
+        </div>
+        <div class="details">
             <div>
-                <p></p>
-                <p><span class="pf_val">116.81</span></p>
+                <p>ISIN</p>
+                <p><span>GB0214654541540</span></p>
+            </div>
+            <div>
+                <p>Total cost</p>
+                <p><span>&pound;98.00</span></p>
+            </div>
+            <div>
+                <p>Quantity</p>
+                <p><span>&pound;0.76</span></p>
+            </div>
+            <div>
+                <p>Last Price</p>
+                <p><span>&pound;128.64</span></p>
+            </div>
+            <div class="info-buttons">
+            <a class="button outline" href="/documents/FundFactsheetPDF.pdf">Get factsheet<i class="fa fa-file-text" aria-hidden="true"></i></a>
+            <a class="button outline" href="#">Get KIDD<i class="fa fa-file-text" aria-hidden="true"></i></a>
             </div>
         </div>
-        <div class="block has_link">
-            <div>
-                <p><a href="/folio/isa">Isa</a></p>
-                <p>N164895</p>
-            </div>
-            <div>
-                <p></p>
-                <p><span class="pf_val">12752.90</span></p>
-            </div>
-        </div>
-        <div class="block has_link">
-            <div>
-                <p><a href="/folio/pension">Pension</a></p>
-                <p>N123458</p>
-            </div>
-            <div>
-                <p></p>
-                <p><span class="pf_val">20000.05</span></p>
-            </div>
-        </div>
+        <div class="toggle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
     </div>
 </div>
       <!-- end of inner content --> 

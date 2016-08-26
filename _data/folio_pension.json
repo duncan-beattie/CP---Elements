@@ -1,16 +1,15 @@
 [
     {
         "element_type": "folio_breakdown",
-        "title": "General",
+        "title": "Pension",
         "acc_info": [
             {
-                "acc_ref": "N468774",
-                "acc_name": "School fees",
-                "joint_holder": "Jack Smith"
+                "acc_ref": "N164895",
+                "acc_name": ""
             }
         ],
         "acc_trans": [
-            { "label": "Account value", "value": "8224.44", "prefix": "&pound;"  },
+            { "label": "Account value", "value": "24201.1", "prefix": "&pound;"  },
             { "label": "Gain/Loss", "value": "2003.1", "prefix": "&pound;"  },
             { "label": "Money in", "value": "21900.6", "prefix": "&pound;"  },
             { "label": "Money out", "value": "212.46", "prefix": "&pound;"  },
@@ -30,7 +29,7 @@
     {
         "element_type": "button",
         "variant": "outline",
-        "href": "transactions/general_n468774",
+        "href": "transactions/pensions-N164895",
         "label": "View transaction history",
         "icon": "fa-gbp"
     },
@@ -48,7 +47,7 @@
         "acc_funds": [
             {
                 "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
-                "value": "2812.22",
+                "value": "5412.22",
                 "prefix": "&pound",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },

@@ -3,11 +3,15 @@
         "element_type": "overlay",
         "user": "Brad",
         "cli_ref": "011114567",
-        "prev_login": "July 3, 2016 09:12:30",
+        "ignore_prev_login": "July 3, 2016 09:12:30",
+        "prev_login": "3 July 2016 9:12pm",
+        "adviser-name": "Beckett- 16101",
+        "adviser-num": "07987 565 987",
         "link-list": [ 
             { "href": "/preferences/", "label": "Personal details", "icon": "fa-user" },
             { "href": "/news/", "label": "News", "icon": "fa-newspaper-o" },
-            { "href": "/contact/", "label": "Contact us", "icon": "fa-phone" }
+            { "href": "/contact/", "label": "Contact us", "icon": "fa-phone" },
+            { "href": "/", "label": "Log out", "icon": "fa-sign-out" }
         ]
     }
 ]

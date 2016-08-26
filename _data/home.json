@@ -1,9 +1,15 @@
 [
     {
         "element_type": "welcome_message",
+        "add_class": "hide-on-large",
         "user": "Brad",
         "cli_ref": "011114567",
         "prev_login": "July 3, 2016 09:12:30"
+    },
+    {
+        "element_type": "header_graph",
+        "add_class": "hide-on-small accordion",
+        "src": "/images/graphs/3mnth.png"
     },
     {
         "element_type": "folio_view",
@@ -11,20 +17,32 @@
         "sources": [
             {
                 "title": "General",
-                "ref": "N123456",
+                "href": "general",
+                "ref": "N468774",
+                "joint_holder": "Jack Smith",
                 "fields": [
-                    { "label": "School fees", "value": "24201.10" }
+                    { "label": "School fees", "value": "8224.44" }
+                ]
+            },
+            {
+                "title": "General",
+                "href": "general2",
+                "ref": "N266378",
+                "fields": [
+                    { "label": "", "value": "116.81" }
                 ]
             },
             {
                 "title": "Isa",
-                "ref": "N123457",
+                "href": "isa",
+                "ref": "N164895",
                 "fields": [
-                    { "label": "", "value": "10168.20" }
+                    { "label": "", "value": "12752.90" }
                 ]
             },
             {
                 "title": "Pension",
+                "href": "pension",
                 "ref": "N123458",
                 "fields": [
                     { "label": "", "value": "20000.05" }

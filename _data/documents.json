@@ -9,11 +9,8 @@
                 "name": "account_options",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "option 1"  },
-                    { "val": "value2", "label": "option 2"  },
-                    { "val": "value3", "label": "option 3"  },
-                    { "val": "value4", "label": "option 4"  },
-                    { "val": "value5", "label": "option 5"  }
+                    { "val": "value1", "label": "Client statements"  },
+                    { "val": "value2", "label": "Contract Notes"  }
                 ]
             },
             {
@@ -21,11 +18,8 @@
                 "name": "account_options",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "option 1"  },
-                    { "val": "value2", "label": "option 2"  },
-                    { "val": "value3", "label": "option 3"  },
-                    { "val": "value4", "label": "option 4"  },
-                    { "val": "value5", "label": "option 5"  }
+                    { "val": "value1", "label": "General N468774"  },
+                    { "val": "value2", "label": "Isa N164895"  }
                 ]
             },
             {

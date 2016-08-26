@@ -5,8 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document Search</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+  <meta name="description" content="">
   <link rel="stylesheet" href="/css/protal.css">
   <link rel="canonical" href="http://yourdomain.com/document_search/">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://yourdomain.com/feed.xml">
@@ -18,12 +17,16 @@
     <h2>Brad</h2>
     <ul>
         <li>Client reference: 011114567</li>
-        <li data-ts="July 3, 2016 09:12:30">Last login: </li>
+        <li>Adviser: Beckett- 16101</li>
+        <li>Adviser number: 07987 565 987</li>
+        <!-- <li data-ts="3 July 2016 9:12pm">Last login: </li> -->
+        <li>Last login: 3 July 2016 9:12pm</li>
     </ul>
     <ul class="util-nav">
         <li><a href="/preferences/"><i class="fa fa-user" aria-hidden="true"></i>Personal details</a></li>
         <li><a href="/news/"><i class="fa fa-newspaper-o" aria-hidden="true"></i>News</a></li>
         <li><a href="/contact/"><i class="fa fa-phone" aria-hidden="true"></i>Contact us</a></li>
+        <li><a href="/"><i class="fa fa-sign-out" aria-hidden="true"></i>Log out</a></li>
     </ul>
 </div>
 </nav>
@@ -33,7 +36,7 @@
         <a class="nav-toggle" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
     </div>
 </header>
-      <div class="row outer">
+      <div class="outer">
         <footer class="site-footer row">
 <div class="navbar">
 <div class="info_block hide-on-mobile">
@@ -56,29 +59,23 @@
 <div class="form-area inverted"> 
     <form action="">
                 <div class="styled-select">
-                    <select name="search_docs">
-                        <option value="Document Type" selected >Document Type</option>
-                        <option value="value1">option 1</option>
-                        <option value="value2">option 2</option>
-                        <option value="value3">option 3</option>
-                        <option value="value4">option 4</option>
-                        <option value="value5">option 5</option>
+                    <select name="account_options" id="account_options"">
+                        <option value="Document type" selected >Document type</option>
+                        <option value="value1">Client statements</option>
+                        <option value="value2">Contract Notes</option>
                     </select>
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </div>
                 <div class="styled-select">
-                    <select name="search_acc">
+                    <select name="account_options" id="account_options"">
                         <option value="Account" selected >Account</option>
-                        <option value="value1" selected>N164895 Isa</option>
-                        <option value="value2">option 2</option>
-                        <option value="value3">option 3</option>
-                        <option value="value4">option 4</option>
-                        <option value="value5">option 5</option>
+                        <option value="value1">General N468774</option>
+                        <option value="value2">Isa N164895</option>
                     </select>
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </div>
                 <div class="styled-select">
-                    <select name="serach_start">
+                    <select name="serach_start" id="serach_start"">
                         <option value="Start date" selected >Start date</option>
                         <option value="value1" selected>01/01/2016</option>
                         <option value="value2">01/02/2016</option>
@@ -89,7 +86,7 @@
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </div>
                 <div class="styled-select">
-                    <select name="serach_start">
+                    <select name="serach_start" id="serach_start"">
                         <option value="End date" selected >End date</option>
                         <option value="value1" selected>01/01/2016</option>
                         <option value="value2">01/02/2016</option>
@@ -112,39 +109,45 @@
 </div>
 <div class="listicle doc_list">
     <div class="block read">
-        <h3><a href="#">Client Statement 2016</a></h3>
-        <p>1023764986 Isa</p>
-        <p>16/03/2016</p>
+        <h3><a href="#">N31 - Contract note</a></h3>
+        <p>General N468774</p>
+        <p>29/07/2016</p>
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+    </div>
+    <div class="block read">
+        <h3><a href="#">N31 - Contract note</a></h3>
+        <p>General N468774</p>
+        <p>28/06/2016</p>
         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
     </div>
     <div class="block">
-        <h3><a href="#">Client Statement 2016</a></h3>
-        <p>1063764256 Isa</p>
-        <p>16/03/2016</p>
-        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-    </div>
-    <div class="block read">
-        <h3><a href="#">Client Statement 2016</a></h3>
-        <p>1013764986 Isa</p>
-        <p>16/03/2016</p>
-        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-    </div>
-    <div class="block read">
-        <h3><a href="#">Client Statement 2016</a></h3>
-        <p>1023764986 Isa</p>
-        <p>16/03/2016</p>
+        <h3><a href="#">N31 - Contract note</a></h3>
+        <p>General N468774</p>
+        <p>27/05/2016</p>
         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
     </div>
     <div class="block">
-        <h3><a href="#">Client Statement 2016</a></h3>
-        <p>1063764256 Isa</p>
-        <p>16/03/2016</p>
+        <h3><a href="#">Client statements 2016</a></h3>
+        <p></p>
+        <p>10/05/2016</p>
         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
     </div>
     <div class="block read">
-        <h3><a href="#">Client Statement 2016</a></h3>
-        <p>1013764986 Isa</p>
-        <p>16/03/2016</p>
+        <h3><a href="#">N31 - Contract note</a></h3>
+        <p>Isa N164859</p>
+        <p>30/04/2016</p>
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+    </div>
+    <div class="block">
+        <h3><a href="#">N31 - Contract note</a></h3>
+        <p>Isa N164859</p>
+        <p>29/03/2016</p>
+        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+    </div>
+    <div class="block">
+        <h3><a href="#">Client statements 2015</a></h3>
+        <p></p>
+        <p>10/10/2015</p>
         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
     </div>
 </div>

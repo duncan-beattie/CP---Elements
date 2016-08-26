@@ -62,8 +62,11 @@
     {% if element.cli_ref %}
     <ul>
         <li>Client reference: {{ element.cli_ref }}</li>
+        <li>Adviser: {{ element.adviser-name }}</li>
+        <li>Adviser number: {{ element.adviser-num }}</li>
         {% if element.prev_login %}
-        <li data-ts="{{ element.prev_login  }}">Last login: </li>
+        <!-- <li data-ts="{{ element.prev_login  }}">Last login: </li> -->
+        <li>Last login: {{ element.prev_login  }}</li>
         {% endif %}
     </ul>
     {% endif %}
@@ -91,7 +94,7 @@
 {% endcomment %} 
 
 {% when "welcome_message" %}
-<div class="welcome">
+<div class="welcome{% if element.add_class %} {{ element.add_class }}{% endif %}">
 <h1>Good <span>Morning</span> {{ element.user }}</h1>
 {% if element.cli_ref %}
     <ul>
@@ -159,26 +162,48 @@
 
 {% when "folio_view" %}
 <div class="listicle {{ element.element_type }}">
-    <div class="block">
+    <div class="block folio_total">
         <div>
             <p>{{ element.title }}</p>
             <p class="pf_total">blah</p>
         </div>
     </div>
-    {% for row in element["sources"] %}
-    <div class="block has_link">
-        <div>
-            <p><a href="/folio/{{row.title | downcase}}">{{ row.title }}</a></p>
-            <p>{{ row.ref }}</p>
-        </div>
-        {% for field in row["fields"] %}
-        <div>
-            <p>{{ field.label }}</p>
-            <p><span class="pf_val">{{ field.value }}</span></p>
+    <div class="col-2">
+        {% for row in element["sources"] %}
+        <div class="block has_link">
+            <div>
+                <p><a href="/folio/{{row.href}}">{{ row.title }}</a></p>
+                <p>{{ row.ref }}</p>
+            </div>
+            {% if row.joint_holder %}
+            <div>
+                <p><i class="fa fa-users" aria-hidden="true"></i> {{ row.joint_holder }}</p>
+            </div>
+            {% endif %}
+            {% for field in row["fields"] %}
+            <div>
+                <p>{{ field.label }}</p>
+                <p><span class="pf_val">{{ field.value }}</span></p>
+            </div>
+            {% endfor %}
         </div>
         {% endfor %}
     </div>
-    {% endfor %}
+</div>
+
+
+{% when "header_graph" %}
+<div class="listicle {{ element.element_type }}{% if element.add_class %} {{ element.add_class }}{% endif %}">
+    <div class="block">
+        <div>
+        <h2>Portfolio Valuation</h2>
+        <img src="{{ element.src }}" />
+    </div>
+    <div class="details">
+        <p>khkhkjhdshuadhakd kljds lakjd alkjdsh alkjsdalkjsdh alkjsd kadsnalsd lkajsd </p>
+    </div>
+    <div class="toggle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+    </div>
 </div>
 
 
@@ -249,7 +274,7 @@
     {% for row in element["acc_funds"] %}
     <div class="block acc_funds">
         <div>
-            <p>{{ row.title }}</p>
+            <p>wat{{ row.title }}</p>
             <p><span>{% if row.prefix %}{{ row.prefix }}{%endif%}{{ row.value }}</span></p>
         </div>
         <div class="details">
@@ -260,8 +285,9 @@
             </div>
             {% endfor %}
             <div class="info-buttons">
-                <a class="button outline" href="/folio/general/">Get factsheet<i class="fa fa-file-text" aria-hidden="true"></i></a>
-                <a class="button outline" href="/folio/general/">Get KIDD<i class="fa fa-file-text" aria-hidden="true"></i></a>
+            {% for field in row["documents"] %}
+            <a class="button outline" href="{{ field.href }}">{{ field.label }}<i class="fa {{ field.icon }}" aria-hidden="true"></i></a>
+            {% endfor %}
             </div>
         </div>
         <div class="toggle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
@@ -297,7 +323,7 @@
     <div class="block acc_funds">
         <div>
             <p>{{row.label}}</p>
-            <p><span>{% if row.prefix %}{{ row.prefix }} {%endif%}{{ row.value }}</span></p>
+            <p><span>{% if row.prefix %}{{ row.prefix }}{%endif%}{{ row.value }}</span></p>
         </div>
         <div>
             <p>{{ row.date }}</p>
@@ -306,7 +332,7 @@
             {% for fee in row["fees"] %}
             <div>
                 <p>{{ fee.label }}</p>
-                <p class="fee">-<span>{% if fee.prefix %}{{ fee.prefix }} {%endif%}{{ fee.value }}</span></p>
+                <p class="fee"><span>{% if fee.prefix %}{{ fee.prefix }}{%endif%}{{ fee.value }}</span></p>
             </div>
             {% endfor %}
             <div>
@@ -316,13 +342,13 @@
             {% for trans in row["breakdown"] %}
             <div>
                 <p>{{ trans.label }}</p>
-                <p><span>{% if trans.prefix %}{{ trans.prefix }} {%endif%}{{ trans.value }}</span></p>
+                <p><span>{% if trans.prefix %}{{ trans.prefix }}{%endif%}{{ trans.value }}</span></p>
             </div>
             {% endfor %}
         </div>
         <div class="cash">
-            <p>{{ row["breakdown"]last.label }}</p>
-            <p><span>{% if row["breakdown"]last.prefix %}{{ row["breakdown"]last.prefix }} {%endif%}{{ row["breakdown"]last.value }}</span></p>
+            <p>Cash</p>
+            <p>{{ row.acc-cash }}</p>
         </div>
         <div class="toggle"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
     </div>
@@ -404,7 +430,7 @@
                 <label for="{{ row.name }}">{{ row.outer_label }}</label>
                 {% endif %}
                 <div class="styled-select">
-                    <select name="{{ row.name }}">
+                    <select name="{{ row.name }}" id="{{ row.name }}"{% if row.controller %} class="controller {{ row.controller }}{%endif%}">
                         {% if row.label %}
                         <option value="{{ row.label }}" selected >{{ row.label }}</option>
                         {% endif %}

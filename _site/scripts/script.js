@@ -39,7 +39,7 @@ $(function(){
     }
     if($('.block.has_link').length){
         $.each($('.block.has_link'), function(i, el){
-            $(el).click(function(){
+            $(el).one('click', function(e){
                 $(el).find('a').trigger("click")
             })
         })
@@ -64,5 +64,57 @@ $(function(){
 
 
 $(function(){
-    // highlight navbar based on url ? maybe ??
+    var path = document.location.pathname.split('/')[1]
+
+    function setActive(key){
+        $('.navbar a[rel*="'+key+'"]').toggleClass('is-active')
+    }
+
+    switch (path){
+        case "home":
+        case "folio":
+            setActive('home')
+        break;
+        case "analysis":
+            setActive('analysis')
+        break;
+        case "transactions":
+            setActive('transactions')
+        break;
+        case "document":
+        case "document_search":
+            setActive('documents')
+        break;
+
+       default: 
+    } 
+});
+
+
+
+$(function(){
+    // select on change
+    $('select.controller').on('change', function(e){
+        $.each($('select.controller option'), function(i, el){
+          if($(el).prop('selected')){
+              $('.fake-form').addClass('is-active').attr('href', $(el).text().split(' ').join('_').toLowerCase())  
+          }
+        })
+    })
+    // fake form submits
+//    if($('.fake-form').length){
+//        $('.fake-form').on('click', function(e){
+//            e.preventDefault()
+//            e.stopPropagation()
+//            if($('#account_options').length){
+//                $.each($('#account_options option'), function(i, el){
+//                  if($(el).prop('selected')){
+//                      console.log($(el).text())
+//                  }
+//                })
+//                
+//            }
+//            return false
+//        });
+//    }
 });

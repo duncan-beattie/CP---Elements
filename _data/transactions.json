@@ -8,11 +8,12 @@
                 "label": "Account",
                 "name": "account_options",
                 "type": "select",
+                "controller": "transactions",
                 "options": [
-                    { "val": "value1", "label": "option 1"  },
-                    { "val": "value2", "label": "option 2"  },
-                    { "val": "value3", "label": "option 3"  },
-                    { "val": "value4", "label": "option 4"  },
+                    { "val": "value2", "label": "General N468774"  },
+                    { "val": "value3", "label": "General N266378"  },
+                    { "val": "isa-N164895", "label": "Isa N164895"  },
+                    { "val": "value4", "label": "Pension N123458"  },
                     { "val": "value5", "label": "option 5"  }
                 ]
             },
@@ -21,7 +22,7 @@
                 "name": "date_options",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "option 1"  },
+                    { "val": "today", "label": "Today"  },
                     { "val": "value2", "label": "option 2"  },
                     { "val": "value3", "label": "option 3"  },
                     { "val": "value4", "label": "option 4"  },
@@ -39,13 +40,14 @@
                     { "val": "value4", "label": "option 4"  },
                     { "val": "value5", "label": "option 5"  }
                 ]
-            },
-            {
-                "label": "Search",
-                "name": "search",
-                "type": "submit"
             }
         ]
+    },
+    {
+        "element_type": "button",
+        "variant": "fake-form",
+        "href": "#",
+        "label": "Search"
     }
 ]
 

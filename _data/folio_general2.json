@@ -1,0 +1,55 @@
+[
+    {
+        "element_type": "folio_breakdown",
+        "title": "General",
+        "acc_info": [
+            {
+                "acc_ref": "N266378",
+            }
+        ],
+        "acc_trans": [
+            { "label": "Account value", "value": "116.81", "prefix": "&pound;"  },
+            { "label": "Gain/Loss", "value": "16.81", "prefix": "&pound;"  },
+            { "label": "Money in", "value": "100.00", "prefix": "&pound;"  },
+            { "label": "Money out", "value": "0.00", "prefix": "&pound;"  },
+            { "label": "Inter-account transfer in", "value": "0", "prefix": "&pound;"  },
+            { "label": "Inter-account transfer out", "value": "0", "prefix": "&pound;"  },
+            { "label": "Adjustments", "value": "0"  }
+        ]
+    },
+    {
+        "element_type": "graph",
+        "src": "/analysis/",
+        "href": "/images/graphs/3mnth.png",
+        "label": "Three month graph",
+        "icon": "fa-bar-chart",
+        "button_type": "outline"
+    },
+    {
+        "element_type": "button",
+        "variant": "outline",
+        "href": "transactions/general_n468774",
+        "label": "View transaction history",
+        "icon": "fa-gbp"
+    },
+    {
+        "element_type": "folio_funds",
+        "acc_funds": [
+            {
+                "title": "Blackrock Gold & General D Acc",
+                "value": "98.00",
+                "prefix": "&pound",
+                "fund_details": [
+                    { "label": "ISIN", "value": "GB0214654541540" },
+                    { "label": "Total cost", "value": "98.00", "prefix": "&pound;" },
+                    { "label": "Quantity", "value": "0.76", "prefix": "&pound;" },
+                    { "label": "Last Price", "value": "128.64", "prefix": "&pound;" }
+                ],
+                "documents": [
+                    { "label": "Get factsheet", "href": "/documents/FundFactsheetPDF.pdf", "icon": "fa-file-text" },
+                    { "label": "Get KIDD", "href": "#", "icon": "fa-file-text" }
+                ]
+            }
+        ]
+    }
+]

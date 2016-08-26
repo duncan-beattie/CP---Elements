@@ -26,7 +26,7 @@
                 z-index: 0;
             }
             i{ position: relative;}
-            &:hover{
+            &:hover, &.is-active{
                 background: $nuc_orange;
                 color: #fff;
             }
