@@ -1,0 +1,104 @@
+[
+    {
+        "element_type": "folio_breakdown",
+        "title": "Portfolio total<br />(excluding memo assets)",
+        "acc_info": [
+            {
+                "acc_ref": "&pound;41094.20",
+                "acc_name": ""
+            }
+        ],
+        "acc_trans": [
+            { "label": "Account value", "value": "24201.1", "prefix": "&pound;"  },
+            { "label": "Gain/Loss", "value": "2003.1", "prefix": "&pound;"  },
+            { "label": "Money in", "value": "21900.6", "prefix": "&pound;"  },
+            { "label": "Money out", "value": "212.46", "prefix": "&pound;"  },
+            { "label": "Inter-account transfer in", "value": "0", "prefix": "&pound;"  },
+            { "label": "Inter-account transfer out", "value": "0", "prefix": "&pound;"  },
+            { "label": "Adjustments", "value": "0"  }
+        ]
+    },
+    {
+        "element_type": "folio_funds",
+        "acc_funds": [
+            {
+                "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
+                "value": "2812.22",
+                "prefix": "&pound",
+                "fund_details": [
+                    { "label": "ISIN", "value": "GB0214654541540" },
+                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
+                    { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
+                ]
+            },
+            {
+                "title": "Cash account",
+                "value": "5412.22", "prefix": "&pound;",
+                "fund_details": [
+                    { "label": "ISIN", "value": "GB0214654541540" },
+                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
+                    { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
+                ]
+            },
+            {
+                "title": "Blackrock Gold & General D Acc",
+                "value": "98.00",
+                "prefix": "&pound",
+                "fund_details": [
+                    { "label": "ISIN", "value": "GB0214654541540" },
+                    { "label": "Total cost", "value": "98.00", "prefix": "&pound;" },
+                    { "label": "Quantity", "value": "0.76", "prefix": "&pound;" },
+                    { "label": "Last Price", "value": "128.64", "prefix": "&pound;" }
+                ],
+                "documents": [
+                    { "label": "Get factsheet", "href": "/documents/FundFactsheetPDF.pdf", "icon": "fa-file-text" },
+                    { "label": "Get KIDD", "href": "#", "icon": "fa-file-text" }
+                ]
+            },
+            {
+                "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
+                "value": "5412.22",
+                "prefix": "&pound",
+                "fund_details": [
+                    { "label": "ISIN", "value": "GB0214654541540" },
+                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
+                    { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
+                ]
+            },
+            {
+                "title": "Cash account",
+                "value": "5412.22", "prefix": "&pound;",
+                "fund_details": [
+                    { "label": "ISIN", "value": "GB0214654541540" },
+                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
+                    { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
+                ]
+            },
+            {
+                "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
+                "value": "5412.22",
+                "prefix": "&pound",
+                "fund_details": [
+                    { "label": "ISIN", "value": "GB0214654541540" },
+                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
+                    { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
+                ]
+            },
+            {
+                "title": "Cash account",
+                "value": "5412.22", "prefix": "&pound;",
+                "fund_details": [
+                    { "label": "ISIN", "value": "GB0214654541540" },
+                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
+                    { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
+                ]
+            }
+        ]
+    }
+]

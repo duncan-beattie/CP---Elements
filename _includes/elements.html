@@ -162,9 +162,9 @@
 
 {% when "folio_view" %}
 <div class="listicle {{ element.element_type }}">
-    <div class="block folio_total">
+    <div class="block folio_total has_link">
         <div>
-            <p>{{ element.title }}</p>
+            <p><a href="/folio/overview">{{ element.title }}</a></p>
             <p class="pf_total">blah</p>
         </div>
     </div>
@@ -274,7 +274,7 @@
     {% for row in element["acc_funds"] %}
     <div class="block acc_funds">
         <div>
-            <p>wat{{ row.title }}</p>
+            <p>{{ row.title }}</p>
             <p><span>{% if row.prefix %}{{ row.prefix }}{%endif%}{{ row.value }}</span></p>
         </div>
         <div class="details">

@@ -6,38 +6,24 @@
         "fields": [
             {
                 "label": "Account",
-                "name": "serach_account",
+                "name": "account_options",
                 "type": "select",
+                "controller": "transactions",
                 "options": [
-                    { "val": "value1", "label": "N164895 Isa", "selected": "true"  },
-                    { "val": "value2", "label": "option 2"  },
-                    { "val": "value3", "label": "option 3"  },
-                    { "val": "value4", "label": "option 4"  },
-                    { "val": "value5", "label": "option 5"  }
+                    { "val": "value2", "label": "General N468774", "selected": "true"   },
+                    { "val": "value3", "label": "General N266378"  },
+                    { "val": "isa-N164895", "label": "Isa N164895" },
+                    { "val": "value4", "label": "Pension N123458"  }
                 ]
             },
             {
-                "label": "Start date",
-                "name": "serach_start",
+                "label": "Date range",
+                "name": "date_options",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "01/01/2016", "selected": "true"  },
-                    { "val": "value2", "label": "01/02/2016"  },
-                    { "val": "value3", "label": "01/03/2016"  },
-                    { "val": "value4", "label": "01/04/2016"  },
-                    { "val": "value5", "label": "01/05/2016"  }
-                ]
-            },
-            {
-                "label": "End date",
-                "name": "search_end",
-                "type": "select",
-                "options": [
-                    { "val": "value1", "label": "01/01/2016", "selected": "true"  },
-                    { "val": "value2", "label": "01/02/2016"  },
-                    { "val": "value3", "label": "01/03/2016"  },
-                    { "val": "value4", "label": "01/04/2016"  },
-                    { "val": "value5", "label": "01/05/2016"  }
+                    { "val": "today", "label": "Last three months"  },
+                    { "val": "value2", "label": "Last six months"  },
+                    { "val": "value3", "label": "All dates"  }
                 ]
             }
         ]
