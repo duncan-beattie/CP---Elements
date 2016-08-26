@@ -71,7 +71,7 @@
                 @include stretch(rgba($nuc_grey, .25));
                 margin-top: 0;
                 padding: 1em 0;
-                p{ 
+                p{
                     font-size: $copy_large;
                     margin-bottom: .5em;
                 }
@@ -124,8 +124,8 @@
                 background: transparent;
                 border:1px solid $nuc_orange;
             }
-            p{ 
-                display: block; 
+            p{
+                display: block;
                 text-align: left;
                 color: $nuc-grey;
                 width: 100%;
@@ -169,7 +169,6 @@
         padding-bottom: 0 !important;
     }
 }
-.ting{ display: none; }
 .accordion + .accordion{ padding-top: 0; }
 
 .info_block{
@@ -178,4 +177,3 @@
         margin: 0;
     }
 }
-
