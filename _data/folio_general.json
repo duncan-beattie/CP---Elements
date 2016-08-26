@@ -30,8 +30,8 @@
     {
         "element_type": "button",
         "variant": "outline",
-        "href": "transactions/general_n468774",
-        "label": "View transaction history",
+        "href": "/transactions/general_n468774",
+        "label": "Transactions",
         "icon": "fa-gbp"
     },
     {

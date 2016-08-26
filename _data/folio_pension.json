@@ -29,8 +29,8 @@
     {
         "element_type": "button",
         "variant": "outline",
-        "href": "transactions/pensions-N164895",
-        "label": "View transaction history",
+        "href": "/transactions/pensions-N164895",
+        "label": "Transactions",
         "icon": "fa-gbp"
     },
     {

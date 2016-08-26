@@ -23,13 +23,14 @@
         "href": "/images/graphs/3mnth.png",
         "label": "Three month graph",
         "icon": "fa-bar-chart",
-        "button_type": "outline"
+        "button_type": "outline",
+        "table_data": "true" 
     },
     {
         "element_type": "button",
         "variant": "outline",
-        "href": "transactions/general_n468774",
-        "label": "View transaction history",
+        "href": "/transactions/general_n468774",
+        "label": "Transactions",
         "icon": "fa-gbp"
     },
     {
@@ -48,6 +49,16 @@
                 "documents": [
                     { "label": "Get factsheet", "href": "/documents/FundFactsheetPDF.pdf", "icon": "fa-file-text" },
                     { "label": "Get KIDD", "href": "#", "icon": "fa-file-text" }
+                ]
+            },
+            {
+                "title": "Cash account",
+                "value": "5412.22", "prefix": "&pound;",
+                "fund_details": [
+                    { "label": "ISIN", "value": "GB0214654541540" },
+                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
+                    { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]
             }
         ]

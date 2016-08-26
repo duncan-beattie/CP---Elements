@@ -30,7 +30,7 @@
         "element_type": "button",
         "variant": "outline",
         "href": "/transactions/isa_n164895/",
-        "label": "View transaction history",
+        "label": "Transactions",
         "icon": "fa-gbp"
     },
     {

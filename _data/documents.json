@@ -23,27 +23,12 @@
                 ]
             },
             {
-                "label": "Date from",
-                "name": "date_options",
-                "type": "select",
-                "options": [
-                    { "val": "value1", "label": "option 1"  },
-                    { "val": "value2", "label": "option 2"  },
-                    { "val": "value3", "label": "option 3"  },
-                    { "val": "value4", "label": "option 4"  },
-                    { "val": "value5", "label": "option 5"  }
-                ]
-            },
-            {
                 "label": "Date to",
                 "name": "date_options",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "option 1"  },
-                    { "val": "value2", "label": "option 2"  },
-                    { "val": "value3", "label": "option 3"  },
-                    { "val": "value4", "label": "option 4"  },
-                    { "val": "value5", "label": "option 5"  }
+                    { "val": "value1", "label": "Last 3 months"  },
+                    { "val": "value2", "label": "All documents"  }
                 ]
             },
             {

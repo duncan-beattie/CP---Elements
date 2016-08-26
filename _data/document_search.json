@@ -23,27 +23,12 @@
                 ]
             },
             {
-                "label": "Start date",
-                "name": "serach_start",
+                "label": "Date range",
+                "name": "date_options",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "01/01/2016", "selected": "true"  },
-                    { "val": "value2", "label": "01/02/2016"  },
-                    { "val": "value3", "label": "01/03/2016"  },
-                    { "val": "value4", "label": "01/04/2016"  },
-                    { "val": "value5", "label": "01/05/2016"  }
-                ]
-            },
-            {
-                "label": "End date",
-                "name": "serach_start",
-                "type": "select",
-                "options": [
-                    { "val": "value1", "label": "01/01/2016", "selected": "true"  },
-                    { "val": "value2", "label": "01/02/2016"  },
-                    { "val": "value3", "label": "01/03/2016"  },
-                    { "val": "value4", "label": "01/04/2016"  },
-                    { "val": "value5", "label": "01/05/2016"  }
+                    { "val": "value1", "label": "Last 3 months"  },
+                    { "val": "value2", "label": "All documents"  }
                 ]
             }
         ]
