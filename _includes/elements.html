@@ -258,9 +258,11 @@
     <div class="image-holder">
         <img src="{{ element.href }}" alt="{{ element.title }}" />
     </div>
+    {% if element.table_data %}
     <div class="image-holder">
         <img src="/images/graphs/MIMO.png" alt="" />
     </div>
+    {% endif %}
     <div class="modal-footer">
         {% if element.src %}
         <a class="button{% if element.button_type %} {{ element.button_type }}{% endif %}" href="{{ element.src }}">Analysis<i class="fa fa-bar-chart" aria-hidden="true"></i></a>
