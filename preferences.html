@@ -4,6 +4,8 @@ permalink: /preferences/
 title: Preferences
 ---
 
-<h1>My details</h1>
+{% for element in site.data.prefs %}
+{% include elements.html %}
+{% endfor %}
 
 

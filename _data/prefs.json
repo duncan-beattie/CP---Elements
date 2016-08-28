@@ -1,0 +1,46 @@
+[
+    {
+        "element_type": "deets",
+        "title": "Personal details",
+        "fields": [
+            {
+                { "label": "Title", "value": "Mr"  },
+                { "label": "Forename", "value": "Bradley"  },
+                { "label": "Surname", "value": "McBradface"  },
+                { "label": "Sex", "value": "Male"  },
+                { "label": "Marital status", "value": "Divorced"  },
+                { "label": "Date of birth", "value": "28/05/1976"  },
+                { "label": "Nationalities", "value": "British"  },
+                { "label": "Tax residencies", "value": "UK"  },
+                { "label": "National insurance no.", "value": "JE396943B"  },
+                { "label": "Country of residence", "value": "UK"  },
+                { "label": "Employment status", "value": "Self employed"  }
+            }
+        ]
+    },
+    {
+        "element_type": "deets",
+        "title": "Contact details",
+        "fields": [
+            {
+                { "label": "Home", "value": "01233 630451", "editable": "true"  },
+                { "label": "Mobile", "value": "07759 307 469 ", "editable": "true"   },
+                { "label": "Work", "value": "(02) 1234 1234", "editable": "true"   }
+            }
+        ]
+    },
+    {
+        "element_type": "deets",
+        "title": "Email addresses",
+        "add_class": "hide_labels",
+        "fields": [
+            {
+                { "label": "Default", "value": "brad@emailshare.com", "editable": "true"  },
+                { "label": "additional1", "value": "email@another.com", "editable": "true"   }
+            }
+        ],
+        "option": [
+            { "type": "checkbox", "label": "Send notifications to all email addresses" }
+        ]
+    }
+]
