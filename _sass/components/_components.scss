@@ -176,3 +176,33 @@
         margin: 0;
     }
 }
+
+
+// user details
+.deets{
+    h2{
+        color: $nuc_orange;
+        text-align: center;
+    }
+    .deets_fields{
+        background: #fff;
+        padding: 1.5em;
+        & > div{
+            @include columns(2);
+            p{
+                font-size: $copy_small;
+                text-align: left;
+                &.copy_large{
+                    font-size: $copy_large;
+                    @include setFont('light');
+                }
+                &:nth-child(2){
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+}
+
+

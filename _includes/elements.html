@@ -390,6 +390,22 @@
 </div>
 
 
+{% when "deets" %}
+<div class="{{ element.element_type }}">
+    <h2>{{ element.title }}</h2>
+    {% if element.fields %}
+    <div class="{{ element.element_type }}_fields">
+        {% for row in element["fields"] %}
+        <div>
+            {% if element.add_class != "hide_labels" %}
+            <p>{{ row.label }} </p>
+            {% endif %}
+            <p class="copy_large">{{ row.value }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
 
 
 {% comment %}  ---------------------------  Form Elements  ---------------------------  {% endcomment %}
