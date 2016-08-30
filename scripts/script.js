@@ -110,7 +110,13 @@ $(function(){
     if($('.deets .pref_editable').length){
         $.each($('.deets .pref_editable'), function(i, el){
             $(el).on('click', function(e){
-                console.log($(el).parent().data('label'))
+                console.log($(el).find('a').text())
+                var mod = $(el).find('a').attr('href')
+                $(mod).find('input').attr('value', $(el).find('a').text())
+                $(mod).find('.save-state').on('click', function(e){
+                    console.log($(mod).find('input').prop('value'))
+                   $(el).find('a span').text($(mod).find('input').prop('value'))
+                })
             });
         })
     }

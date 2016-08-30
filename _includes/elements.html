@@ -391,17 +391,34 @@
 
 
 {% when "deets" %}
-<div class="{{ element.element_type }}">
+<div id="section_{{ element.title | downcase | split:' ' }}" class="{{ element.element_type }}">
     <h2>{{ element.title }}</h2>
     {% if element.fields %}
     <div class="{{ element.element_type }}_fields">
         {% for row in element["fields"] %}
-        <div data-label="{{ row.label | downcase | split:' ' }}">
+        <div>
             {% if element.add_class != "hide_labels" %}
             <p>{{ row.label }} </p>
             {% endif %}
-            <p class="copy_large{% if row.editable == 'true' %} pref_editable{% endif %}">{{ row.value }}{% if row.editable == 'true' %} <i class="fa fa-caret-right" aria-hidden="true"></i>{% endif %}
-            </p>
+            <p class="copy_large{% if row.editable == 'true' %} pref_editable{% endif %}">{% if row.editable == 'true' %}<a href="#{{ row.label | downcase | split:' ' }}">{% endif %}<span>{{ row.value }}</span>{% if row.editable == 'true' %} <i class="fa fa-caret-right" aria-hidden="true"></i></a>{% endif %}</p>
+{% if row.editable == 'true' %}
+<div class="modal pref_panels" id="{{ row.label | downcase | split:' ' }}" aria-hidden="true">
+    <a href="#close"><i class="fa fa-times" aria-hidden="true"></i></a>
+    <div class="modal-dialog">
+        <h1>{{ element.title }}</h1>
+        <h2>Edit {{ row.label | downcase }}</h2>
+        <div class="form-area inverted">
+            <form>
+                <input type="text" />
+            </form>
+            <a href="#section_{{ element.title | downcase | split:' ' }}" class="button outline">Cancel</a>
+            <a href="#section_{{ element.title | downcase | split:' ' }}" class="button outline save-state">Save</a>
+        </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+{% endif %}
         </div>
         {% endfor %}
     </div>
