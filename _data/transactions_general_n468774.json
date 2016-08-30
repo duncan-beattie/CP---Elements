@@ -31,8 +31,8 @@
     {
         "element_type": "transaction_history",
         "acc_trans": [
-            { 
-                "label": "Lump sum payment", 
+            {
+                "label": "Lump sum payment",
                 "value": "10000.00",
                 "prefix": "&pound;",
                 "date": "24/07/2016",
@@ -46,8 +46,8 @@
                     { "label": "Cash", "value": "789.34", "prefix": "&pound;"  }
                 ]
             },
-            { 
-                "label": "Nucleus fee - Cash Account Isa", 
+            {
+                "label": "Nucleus fee - Cash Account",
                 "value": "23.00",
                 "prefix": "-&pound;",
                 "date": "24/07/2016",
@@ -56,8 +56,8 @@
                     { "label": "Cash", "value": "11986.56", "prefix": "&pound;"  }
                 ]
             },
-            { 
-                "label": "Nucleus fee - Cash Account Isa", 
+            {
+                "label": "Nucleus fee - Cash Account", 
                 "value": "13.44",
                 "prefix": "-&pound;",
                 "date": "20/07/2016",
