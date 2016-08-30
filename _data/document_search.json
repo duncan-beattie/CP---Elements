@@ -5,7 +5,7 @@
         "additional_class": "inverted",
         "fields": [
             {
-                "label": "Document type",
+                "label": "All documents",
                 "name": "account_options",
                 "type": "select",
                 "options": [

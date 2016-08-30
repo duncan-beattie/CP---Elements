@@ -5,7 +5,7 @@
         "action": "/document_search/",
         "fields": [
             {
-                "label": "Document type",
+                "label": "All documents",
                 "name": "account_options",
                 "type": "select",
                 "options": [
