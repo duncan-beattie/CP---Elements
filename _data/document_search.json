@@ -28,7 +28,7 @@
                 "type": "select",
                 "options": [
                     { "val": "value1", "label": "Last 3 months"  },
-                    { "val": "value2", "label": "All documents"  }
+                    { "val": "value2", "label": "All dates"  }
                 ]
             }
         ]
@@ -46,7 +46,3 @@
         ]
     }
 ]
-
-
-
-
