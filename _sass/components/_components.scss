@@ -188,10 +188,12 @@
         background: #fff;
         padding: 1.5em;
         & > div{
-            @include columns(2);
+            //@include columns(2);
             p{
                 font-size: $copy_small;
                 text-align: left;
+                width: 49%;
+                display: inline-block;
                 &.copy_large{
                     font-size: $copy_large;
                     @include setFont('light');
