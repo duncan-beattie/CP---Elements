@@ -20,9 +20,9 @@
         "element_type": "deets",
         "title": "Contact details",
         "fields": [
-            { "label": "Home", "value": "01233 630451", "editable": "true"  },
-            { "label": "Mobile", "value": "07759 307 469 ", "editable": "true"   },
-            { "label": "Work", "value": "(02) 1234 1234", "editable": "true"   }
+            { "label": "Phone Home", "value": "01233 630451", "editable": "true"  },
+            { "label": "Phone Mobile", "value": "07759 307 469 ", "editable": "true"   },
+            { "label": "Phone Work", "value": "(02) 1234 1234", "editable": "true"   }
         ]
     },
     {
@@ -30,11 +30,32 @@
         "title": "Email addresses",
         "add_class": "hide_labels",
         "fields": [
-            { "label": "Default", "value": "brad@emailshare.com", "editable": "true"  },
-            { "label": "additional1", "value": "email@another.com", "editable": "true"   }
+            { "label": "email-primary", "value": "brad@emailshare.com", "editable": "true"  },
+            { "label": "email-secondary", "value": "email@another.com", "editable": "true"   }
         ],
         "option": [
             { "type": "checkbox", "label": "Send notifications to all email addresses" }
+        ]
+    },
+    {
+        "element_type": "deets",
+        "title": "Address",
+        "add_class": "hide_labels",
+        "fields": [
+            { "value": "32 Zarah Avenue" },
+            { "value": "Fife" },
+            { "value": "United Kingdom" },
+            { "value": "JM12 3XX" }
+        ]
+    },
+    {
+        "element_type": "deets",
+        "title": "Bank accounts",
+        "add_class": "hide_labels",
+        "fields": [
+            { "value": "100093881" },
+            { "value": "834400" },
+            { "value": "101093881" }
         ]
     }
 ]

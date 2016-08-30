@@ -101,20 +101,18 @@ $(function(){
           }
         })
     })
-    // fake form submits
-//    if($('.fake-form').length){
-//        $('.fake-form').on('click', function(e){
-//            e.preventDefault()
-//            e.stopPropagation()
-//            if($('#account_options').length){
-//                $.each($('#account_options option'), function(i, el){
-//                  if($(el).prop('selected')){
-//                      console.log($(el).text())
-//                  }
-//                })
-//                
-//            }
-//            return false
-//        });
-//    }
 });
+
+
+
+// editable pref pane
+$(function(){
+    if($('.deets .pref_editable').length){
+        $.each($('.deets .pref_editable'), function(i, el){
+            $(el).on('click', function(e){
+                console.log($(el).parent().data('label'))
+            });
+        })
+    }
+});
+

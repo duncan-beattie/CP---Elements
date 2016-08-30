@@ -396,11 +396,12 @@
     {% if element.fields %}
     <div class="{{ element.element_type }}_fields">
         {% for row in element["fields"] %}
-        <div>
+        <div data-label="{{ row.label | downcase | split:' ' }}">
             {% if element.add_class != "hide_labels" %}
             <p>{{ row.label }} </p>
             {% endif %}
-            <p class="copy_large">{{ row.value }}</p>
+            <p class="copy_large{% if row.editable == 'true' %} pref_editable{% endif %}">{{ row.value }}{% if row.editable == 'true' %} <i class="fa fa-caret-right" aria-hidden="true"></i>{% endif %}
+            </p>
         </div>
         {% endfor %}
     </div>
