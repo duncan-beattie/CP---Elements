@@ -10,11 +10,10 @@
                 "name": "account_options",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "option 1"  },
-                    { "val": "value2", "label": "option 2"  },
-                    { "val": "value3", "label": "option 3"  },
-                    { "val": "value4", "label": "option 4"  },
-                    { "val": "value5", "label": "option 5"  }
+                    { "val": "value2", "label": "General N468774" },
+                    { "val": "value3", "label": "General N266378" },
+                    { "val": "isa-N164895", "label": "Isa N164895" },
+                    { "val": "value4", "label": "Pension N123458"  }
                 ]
             },
             {
@@ -22,11 +21,8 @@
                 "name": "date_options",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "option 1"  },
-                    { "val": "value2", "label": "option 2"  },
-                    { "val": "value3", "label": "option 3"  },
-                    { "val": "value4", "label": "option 4"  },
-                    { "val": "value5", "label": "option 5"  }
+                    { "val": "value1", "label": "Last 3 months"  },
+                    { "val": "value2", "label": "All dates"  }
                 ]
             }
         ]
