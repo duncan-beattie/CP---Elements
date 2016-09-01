@@ -6,20 +6,20 @@
         "fields": [
             {
                 "label": "All documents",
-                "name": "account_options",
+                "name": "document_type",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "Client statements"  },
-                    { "val": "value2", "label": "Contract Notes"  }
+                    { "val": "client_statements", "label": "Client statements"  },
+                    { "val": "contract_notes", "label": "Contract Notes"  }
                 ]
             },
             {
                 "label": "Account",
-                "name": "account_options",
+                "name": "account",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "General N468774"  },
-                    { "val": "value2", "label": "Isa N164895"  }
+                    { "val": "N468774", "label": "General N468774"  },
+                    { "val": "N164895", "label": "Isa N164895"  }
                 ]
             },
             {

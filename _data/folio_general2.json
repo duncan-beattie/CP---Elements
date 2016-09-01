@@ -21,7 +21,7 @@
         "element_type": "graph",
         "src": "/analysis/",
         "href": "/images/graphs/3mnth.png",
-        "label": "Three month graph",
+        "label": "Analysis (three months)",
         "icon": "fa-bar-chart",
         "button_type": "outline",
         "table_data": "true" 
@@ -30,7 +30,7 @@
         "element_type": "button",
         "variant": "outline",
         "href": "/transactions/general_n468774",
-        "label": "Transactions",
+        "label": "Transactions (three months)",
         "icon": "fa-gbp"
     },
     {

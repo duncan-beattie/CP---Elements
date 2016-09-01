@@ -9,9 +9,9 @@
             }
         ],
         "acc_trans": [
-            { "label": "Account value", "value": "24201.1", "prefix": "&pound;"  },
-            { "label": "Gain/Loss", "value": "2003.1", "prefix": "&pound;"  },
-            { "label": "Money in", "value": "21900.6", "prefix": "&pound;"  },
+            { "label": "Account value", "value": "12,752.90", "prefix": "&pound;"  },
+            { "label": "Gain/Loss", "value": "2,003.10", "prefix": "&pound;"  },
+            { "label": "Money in", "value": "21,900.60", "prefix": "&pound;"  },
             { "label": "Money out", "value": "212.46", "prefix": "&pound;"  },
             { "label": "Inter-account transfer in", "value": "0", "prefix": "&pound;"  },
             { "label": "Inter-account transfer out", "value": "0", "prefix": "&pound;"  },
@@ -22,7 +22,7 @@
         "element_type": "graph",
         "src": "/analysis/",
         "href": "/images/graphs/3mnth.png",
-        "label": "Three month graph",
+        "label": "Analysis (three months)",
         "icon": "fa-bar-chart",
         "button_type": "outline"
     },
@@ -30,7 +30,7 @@
         "element_type": "button",
         "variant": "outline",
         "href": "/transactions/isa_n164895/",
-        "label": "Transactions",
+        "label": "Transactions (three months)",
         "icon": "fa-gbp"
     },
     {

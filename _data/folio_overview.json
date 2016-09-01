@@ -9,9 +9,9 @@
             }
         ],
         "acc_trans": [
-            { "label": "Account value", "value": "24201.1", "prefix": "&pound;"  },
-            { "label": "Gain/Loss", "value": "2003.1", "prefix": "&pound;"  },
-            { "label": "Money in", "value": "21900.6", "prefix": "&pound;"  },
+            { "label": "Account value", "value": "24,201.10", "prefix": "&pound;"  },
+            { "label": "Gain/Loss", "value": "2,003.10", "prefix": "&pound;"  },
+            { "label": "Money in", "value": "21,900.60", "prefix": "&pound;"  },
             { "label": "Money out", "value": "212.46", "prefix": "&pound;"  },
             { "label": "Inter-account transfer in", "value": "0", "prefix": "&pound;"  },
             { "label": "Inter-account transfer out", "value": "0", "prefix": "&pound;"  },
@@ -22,22 +22,22 @@
         "element_type": "folio_funds",
         "acc_funds": [
             {
-                "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
-                "value": "2812.22",
-                "prefix": "&pound",
+                "title": "Cash account",
+                "value": "5412.22", "prefix": "&pound;",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
-                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
                     { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
                     { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]
             },
             {
-                "title": "Cash account",
-                "value": "5412.22", "prefix": "&pound;",
+                "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
+                "value": "2812.22",
+                "prefix": "&pound",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
-                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
                     { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
                     { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]
@@ -63,17 +63,17 @@
                 "prefix": "&pound",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
-                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
                     { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
                     { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]
             },
             {
-                "title": "Cash account",
+                "title": "Artemis Global Income I Inc",
                 "value": "5412.22", "prefix": "&pound;",
                 "fund_details": [
-                    { "label": "ISIN", "value": "GB0214654541540" },
-                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "ISIN", "value": "GB00B5N99561" },
+                    { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
                     { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
                     { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]
@@ -84,17 +84,17 @@
                 "prefix": "&pound",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
-                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
                     { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
                     { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]
             },
             {
-                "title": "Cash account",
+                "title": "Old Mutual UK Alpha R Acc",
                 "value": "5412.22", "prefix": "&pound;",
                 "fund_details": [
-                    { "label": "ISIN", "value": "GB0214654541540" },
-                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "ISIN", "value": "GB0032544065" },
+                    { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
                     { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
                     { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]

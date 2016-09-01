@@ -1,6 +1,9 @@
 .center{
     text-align: center !important;
 }
+.hidden{
+    display: none !important;
+}
 // Desktop specific
 @include mq($vp-med){
     .hide-on-mobile, .hide-on-small{ display: none!important; }

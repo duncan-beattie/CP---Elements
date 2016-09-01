@@ -6,7 +6,7 @@
         "action": "#",
         "fields": [
             {
-                "label": "Account",
+                "label": "All Accounts",
                 "name": "account_options",
                 "type": "select",
                 "options": [

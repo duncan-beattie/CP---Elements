@@ -122,3 +122,34 @@ $(function(){
     }
 });
 
+
+
+// grab POST data
+$(function(){
+    function getQueryParams(qs) {
+        qs = qs.split("+").join(" ");
+        var params = {},
+            tokens,
+            re = /[?&]?([^=]+)=([^&]*)/g;
+
+        while (tokens = re.exec(qs)) {
+            params[decodeURIComponent(tokens[1])]
+                = decodeURIComponent(tokens[2]);
+        }
+
+        return params;
+    }
+    
+    var $_GET = getQueryParams(document.location.search);
+    
+    // filter documents
+    if($('body.doc_search').length){
+        $.each($('.doc_list .block'), function(i,el){
+            $(el).addClass('hidden')
+            if($(el).text().contains($_GET.account)){ 
+                $(el).removeClass('hidden') 
+            }
+        })
+    }  
+});
+
