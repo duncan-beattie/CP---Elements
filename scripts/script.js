@@ -33,7 +33,8 @@ $(function(){
     if($('.folio_view .pf_total').length){
         var total = 0
         $.each($('.pf_val'), function(i, el){
-            total += parseFloat($(el).text())
+            var ting = $(el).text().split(',').join('')
+            total += parseFloat(ting)
         })
         $('.pf_total').text(total.toFixed(2))
     }
