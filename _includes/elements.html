@@ -381,7 +381,7 @@
 <div class="listicle {{ element.element_type }}">
     {% for field in element["download_info"] %}
     <div class="block{% if field.read == 'true' %} read{% endif %}">
-        <h3><a href="{{ field.href }}">{{ field.label }}</a></h3>
+        <h3 class="{{ field.type  }}"><a href="{{ field.href }}">{{ field.label }}</a></h3>
         <p>{{ field.summary }}</p>
         <p>{{ field.date }}</p>
         {% if field.icon %}<i class="fa {{ field.icon }}" aria-hidden="true"></i>{% endif %}

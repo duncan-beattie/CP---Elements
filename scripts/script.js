@@ -144,10 +144,39 @@ $(function(){
     
     // filter documents
     if($('body.doc_search').length){
+        // set form elements
+        $.each($('#document_type option'), function(i,el){
+            if($(el).prop('value') == $_GET.document_type ){
+                $(el).attr("selected", "true")
+            }
+        })
+        $.each($('#account option'), function(i,el){
+            if($(el).prop('value') == $_GET.account ){
+                $(el).attr("selected", "true")
+            }
+        })
+
+
+        // filter blocks
         $.each($('.doc_list .block'), function(i,el){
-            $(el).addClass('hidden')
-            if($(el).text().contains($_GET.account)){ 
-                $(el).removeClass('hidden') 
+            if($_GET.account != "default" || $_GET.document_type != "default"){
+                $(el).addClass('hidden')
+                if($_GET.account != "default"){
+                    if($(el).text().contains($_GET.account)){ 
+                        $(el).removeClass('hidden') 
+                    }
+                }
+                if($_GET.document_type != "default"){
+                    if($(el).find('h3').hasClass($_GET.document_type)){ 
+                        $(el).removeClass('hidden') 
+                    }
+                }
+            }
+            if($_GET.account != "default" && $_GET.document_type != "default"){
+                $(el).addClass('hidden')
+                if($(el).text().contains($_GET.account) && $(el).find('h3').hasClass($_GET.document_type)){ 
+                    $(el).removeClass('hidden') 
+                }
             }
         })
     }  

@@ -9,8 +9,8 @@
                 "name": "document_type",
                 "type": "select",
                 "options": [
-                    { "val": "client_statements", "label": "Client statements"  },
-                    { "val": "contract_notes", "label": "Contract Notes"  }
+                    { "val": "client_statement", "label": "Client statements"  },
+                    { "val": "contract_note", "label": "Contract Notes"  }
                 ]
             },
             {

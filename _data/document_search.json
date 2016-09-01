@@ -1,48 +1,54 @@
 [
     {
         "element_type": "form",
-        "action": "",
+        "title": "Documents",
+        "action": "/document_search/",
         "additional_class": "inverted",
         "fields": [
             {
                 "label": "All documents",
-                "name": "account_options",
+                "name": "document_type",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "Client statements"  },
-                    { "val": "value2", "label": "Contract Notes"  }
+                    { "val": "client_statement", "label": "Client statements"  },
+                    { "val": "contract_note", "label": "Contract Notes"  }
                 ]
             },
             {
                 "label": "Account",
-                "name": "account_options",
+                "name": "account",
                 "type": "select",
                 "options": [
-                    { "val": "value1", "label": "General N468774"  },
-                    { "val": "value2", "label": "Isa N164895"  }
+                    { "val": "N468774", "label": "General N468774"  },
+                    { "val": "N164895", "label": "Isa N164895"  }
                 ]
             },
             {
-                "label": "Date range",
+                "label": "Date to",
                 "name": "date_options",
                 "type": "select",
                 "options": [
                     { "val": "value1", "label": "Last 3 months"  },
                     { "val": "value2", "label": "All dates"  }
                 ]
+            },
+            {
+                "label": "Search",
+                "name": "search",
+                "type": "submit"
             }
         ]
     },
     {
         "element_type": "doc_list",
         "download_info": [
-            { "label": "N31 - Contract note", "summary": "General N468774", "date": "29/07/2016", "read": "true", "icon": "fa-file-pdf-o", "href": "#"  },
-            { "label": "N31 - Contract note", "summary": "General N468774", "date": "28/06/2016", "read": "true", "icon": "fa-file-pdf-o", "href": "#"  },
-            { "label": "N31 - Contract note", "summary": "General N468774", "date": "27/05/2016", "read": "false", "icon": "fa-file-pdf-o", "href": "#"  },
-            { "label": "Client statements 2016", "summary": "", "date": "10/05/2016", "read": "false", "icon": "fa-file-pdf-o", "href": "#"  },
-            { "label": "N31 - Contract note", "summary": "Isa N164895", "date": "30/04/2016", "read": "true", "icon": "fa-file-pdf-o", "href": "#"  },
-            { "label": "N31 - Contract note", "summary": "Isa N164895", "date": "29/03/2016", "false": "true", "icon": "fa-file-pdf-o", "href": "#"  },
-            { "label": "Client statements 2015", "summary": "", "date": "10/10/2015", "read": "false", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "type": "contract_note", "label": "N31 - Contract note", "summary": "General N468774", "date": "29/07/2016", "read": "true", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "type": "contract_note", "label": "N31 - Contract note", "summary": "General N468774", "date": "28/06/2016", "read": "true", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "type": "contract_note", "label": "N31 - Contract note", "summary": "General N468774", "date": "27/05/2016", "read": "false", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "type": "client_statement", "label": "Client statements 2016", "summary": "", "date": "10/05/2016", "read": "false", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "type": "contract_note", "label": "N31 - Contract note", "summary": "Isa N164895", "date": "30/04/2016", "read": "true", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "type": "contract_note", "label": "N31 - Contract note", "summary": "Isa N164895", "date": "29/03/2016", "false": "true", "icon": "fa-file-pdf-o", "href": "#"  },
+            { "type": "client_statement", "label": "Client statements 2015", "summary": "", "date": "10/10/2015", "read": "false", "icon": "fa-file-pdf-o", "href": "#"  },
         ]
     }
 ]
