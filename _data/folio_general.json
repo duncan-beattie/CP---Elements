@@ -48,21 +48,21 @@
         "acc_funds": [
             {
                 "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
-                "value": "2812.22",
+                "value": "2,812.22",
                 "prefix": "&pound",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
-                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
                     { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
                     { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]
             },
             {
                 "title": "Cash account",
-                "value": "5412.22", "prefix": "&pound;",
+                "value": "5,412.22", "prefix": "&pound;",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
-                    { "label": "Total cost", "value": "5123.02", "prefix": "&pound;" },
+                    { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
                     { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
                     { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]
