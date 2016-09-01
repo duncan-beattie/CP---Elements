@@ -5,7 +5,6 @@
         "action": "/transactions-breakdown/",
         "fields": [
             {
-                "label": "All Accounts",
                 "name": "account_options",
                 "type": "select",
                 "controller": "transactions",

@@ -5,7 +5,6 @@
         "additional_class": "inverted",
         "fields": [
             {
-                "label": "Account",
                 "name": "account_options",
                 "type": "select",
                 "controller": "transactions",

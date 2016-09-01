@@ -37,6 +37,16 @@
         "element_type": "folio_funds",
         "acc_funds": [
             {
+                "title": "Cash account",
+                "value": "5,412.22", "prefix": "&pound;",
+                "fund_details": [
+                    { "label": "Available cash", "value": "5,412.22", "prefix": "&pound;" },
+                    { "label": "Reserved cash", "value": "0.00", "prefix": "&pound;" },
+                    { "label": "Uncleared cash", "value": "0.00", "prefix": "&pound;" },
+                    { "label": "Unsettled cash", "value": "0.00", "prefix": "&pound;" }
+                ]
+            },
+            {
                 "title": "Blackrock Gold & General D Acc",
                 "value": "98.00",
                 "prefix": "&pound",
@@ -49,16 +59,6 @@
                 "documents": [
                     { "label": "Get factsheet", "href": "/documents/FundFactsheetPDF.pdf", "icon": "fa-file-text" },
                     { "label": "Get KIDD", "href": "#", "icon": "fa-file-text" }
-                ]
-            },
-            {
-                "title": "Cash account",
-                "value": "5,412.22", "prefix": "&pound;",
-                "fund_details": [
-                    { "label": "ISIN", "value": "GB0214654541540" },
-                    { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
-                    { "label": "Quantity", "value": "622.30", "prefix": "&pound;" },
-                    { "label": "Last Price", "value": "8.6971", "prefix": "&pound;" }
                 ]
             }
         ]

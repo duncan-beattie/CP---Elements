@@ -156,6 +156,11 @@ $(function(){
                 $(el).attr("selected", "true")
             }
         })
+        $.each($('#date_options option'), function(i,el){
+            if($(el).prop('value') == $_GET.date_options ){
+                $(el).attr("selected", "true")
+            }
+        })
 
 
         // filter blocks

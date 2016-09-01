@@ -5,7 +5,6 @@
         "additional_class": "inverted",
         "fields": [
             {
-                "label": "Account",
                 "name": "serach_account",
                 "type": "select",
                 "options": [

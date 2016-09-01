@@ -15,7 +15,7 @@
                 ]
             },
             {
-                "label": "Account",
+                "label": "All accounts",
                 "name": "account",
                 "type": "select",
                 "options": [
