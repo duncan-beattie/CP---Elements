@@ -23,7 +23,7 @@
                 ]
             },
             {
-                "label": "Date to",
+                "label": "Date range",
                 "name": "date_options",
                 "type": "select",
                 "options": [
