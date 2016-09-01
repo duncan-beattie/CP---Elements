@@ -31,39 +31,39 @@
     {
         "element_type": "transaction_history",
         "acc_trans": [
-            { 
-                "label": "Lump sum payment", 
-                "value": "10000.00",
+            {
+                "label": "Lump sum payment",
+                "value": "10,000.00",
                 "prefix": "&pound;",
                 "date": "24/07/2016",
-                "acc-cash": "12752.90",
+                "acc-cash": "12,752.90",
                 "fees": [
                     { "label": "Advice fee (initial)", "value": "100.00", "prefix": "&pound;"  }
                 ],
                 "breakdown": [
-                    { "label": "Fidelity South East Asia", "value": "6897.23", "prefix": "&pound;"  },
-                    { "label": "M&amp;G Glbal Dividend UK", "value": "2210.66", "prefix": "&pound;"  },
+                    { "label": "Fidelity South East Asia", "value": "6,897.23", "prefix": "&pound;"  },
+                    { "label": "M&amp;G Glbal Dividend UK", "value": "2,210.66", "prefix": "&pound;"  },
                     { "label": "Cash", "value": "789.34", "prefix": "&pound;"  }
                 ]
             },
-            { 
-                "label": "Nucleus fee - Cash Account Isa", 
+            {
+                "label": "Nucleus fee - Cash Account Isa",
                 "value": "23.00",
                 "prefix": "-&pound;",
                 "date": "24/07/2016",
-                "acc-cash": "11963.56",
+                "acc-cash": "11,963.56",
                 "breakdown": [
-                    { "label": "Cash", "value": "11986.56", "prefix": "&pound;"  }
+                    { "label": "Cash", "value": "11,986.56", "prefix": "&pound;"  }
                 ]
             },
-            { 
-                "label": "Nucleus fee - Cash Account Isa", 
+            {
+                "label": "Nucleus fee - Cash Account Isa",
                 "value": "13.44",
                 "prefix": "-&pound;",
                 "date": "20/07/2016",
-                "acc-cash": "11986.56",
+                "acc-cash": "11,986.56",
                 "breakdown": [
-                    { "label": "Cash", "value": "12000.00", "prefix": "&pound;"  }
+                    { "label": "Cash", "value": "12,000.00", "prefix": "&pound;"  }
                 ]
             }
         ]

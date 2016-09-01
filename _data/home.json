@@ -21,7 +21,7 @@
                 "ref": "N468774",
                 "joint_holder": "Jack Smith",
                 "fields": [
-                    { "label": "School fees", "value": "8224.44" }
+                    { "label": "School fees", "value": "8,224.44" }
                 ]
             },
             {
@@ -37,7 +37,7 @@
                 "href": "isa",
                 "ref": "N164895",
                 "fields": [
-                    { "label": "", "value": "12752.90" }
+                    { "label": "", "value": "12,752.90" }
                 ]
             },
             {
@@ -45,7 +45,7 @@
                 "href": "pension",
                 "ref": "N123458",
                 "fields": [
-                    { "label": "", "value": "20000.05" }
+                    { "label": "", "value": "20,000.05" }
                 ]
             }
         ]

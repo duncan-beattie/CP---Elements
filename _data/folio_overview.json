@@ -4,7 +4,7 @@
         "title": "Portfolio total<br />(excluding memo assets)",
         "acc_info": [
             {
-                "acc_ref": "&pound;41094.20",
+                "acc_ref": "&pound;41,094.20",
                 "acc_name": ""
             }
         ],
@@ -23,7 +23,7 @@
         "acc_funds": [
             {
                 "title": "Cash account",
-                "value": "5412.22", "prefix": "&pound;",
+                "value": "5,412.22", "prefix": "&pound;",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
                     { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
@@ -33,7 +33,7 @@
             },
             {
                 "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
-                "value": "2812.22",
+                "value": "2,812.22",
                 "prefix": "&pound",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
@@ -59,7 +59,7 @@
             },
             {
                 "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
-                "value": "5412.22",
+                "value": "5,412.22",
                 "prefix": "&pound",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
@@ -70,7 +70,7 @@
             },
             {
                 "title": "Artemis Global Income I Inc",
-                "value": "5412.22", "prefix": "&pound;",
+                "value": "5,412.22", "prefix": "&pound;",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB00B5N99561" },
                     { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
@@ -80,7 +80,7 @@
             },
             {
                 "title": "L&amp;G All Stocks Index Linked Gift Index M Inst Acc",
-                "value": "5412.22",
+                "value": "5,412.22",
                 "prefix": "&pound",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0214654541540" },
@@ -91,7 +91,7 @@
             },
             {
                 "title": "Old Mutual UK Alpha R Acc",
-                "value": "5412.22", "prefix": "&pound;",
+                "value": "5,412.22", "prefix": "&pound;",
                 "fund_details": [
                     { "label": "ISIN", "value": "GB0032544065" },
                     { "label": "Total cost", "value": "5,123.02", "prefix": "&pound;" },
