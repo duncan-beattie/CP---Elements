@@ -102,6 +102,8 @@ $(function(){
           }
         })
     })
+    var def = $('select.controller option:first-child')
+    $('.fake-form').addClass('is-active').attr('href', $(def).text().split(' ').join('_').toLowerCase())  
 });
 
 
