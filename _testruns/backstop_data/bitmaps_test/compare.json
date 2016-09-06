@@ -1,6 +1,39 @@
 {
   "compareConfig": {
-    "testPairs": []
+    "testPairs": [
+      {
+        "reference": "../../backstop_data/bitmaps_reference/0_0_document_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160906-142828/0_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "0_0_document_0_phone.png",
+        "label": "Login Screen",
+        "misMatchThreshold": 0.1
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/1_0_document_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160906-142828/1_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "1_0_document_0_phone.png",
+        "label": "Home Screen",
+        "misMatchThreshold": 0.1
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/2_0_document_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160906-142828/2_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "2_0_document_0_phone.png",
+        "label": "Folio Overview",
+        "misMatchThreshold": 0.1
+      },
+      {
+        "reference": "../../backstop_data/bitmaps_reference/3_0_document_0_phone.png",
+        "test": "../../backstop_data/bitmaps_test/20160906-142828/3_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "3_0_document_0_phone.png",
+        "label": "Transactions General",
+        "misMatchThreshold": 0.1
+      }
+    ]
   },
   "lastConfigHash": "b4c1394fa11f0fd470f533d518e21d2687e30727"
 }
