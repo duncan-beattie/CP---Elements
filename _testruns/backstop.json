@@ -1,0 +1,58 @@
+{
+  "viewports": [
+    {
+      "name": "phone",
+      "width": 320,
+      "height": 480
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Login Screen",
+      "url": "http://127.0.0.1:4000/",
+      "selectors": [
+        "document"
+      ],
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "Home Screen",
+      "url": "http://127.0.0.1:4000/home/",
+      "selectors": [
+        "document"
+      ],
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "Folio Overview",
+      "url": "http://127.0.0.1:4000/folio/overview/",
+      "selectors": [
+        "document"
+      ],
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "Transactions General",
+      "url": "http://127.0.0.1:4000/transactions/general_n468774/",
+      "selectors": [
+        "document"
+      ],
+      "delay": 500,
+      "misMatchThreshold" : 0.1
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "../../backstop_data/bitmaps_reference",
+    "bitmaps_test": "../../backstop_data/bitmaps_test",
+    "compare_data": "../../backstop_data/bitmaps_test/compare.json",
+    "casper_scripts": "../../backstop_data/casper_scripts"
+  },
+  "engine": "phantomjs",
+  "report": ["CLI", "browser"],
+  "casperFlags": [],
+  "debug": false,
+  "port": 2001
+}
